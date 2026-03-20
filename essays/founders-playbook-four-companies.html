@@ -1,92 +1,270 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>The Founder's Playbook: What 4 Companies Taught Me About Building — Vikas Malpani</title>
-    <meta name="description" content="I've started four companies over 20 years. Each one taught me something the previous one couldn't. Here's the playbook — not the sanitized version, but the version I'd share over a long coffee." />
-    <meta property="og:title" content="The Founder's Playbook: What 4 Companies Taught Me About Building — Vikas Malpani" />
-    <meta property="og:description" content="I've started four companies over 20 years. Each one taught me something the previous one couldn't." />
-    <meta property="og:type" content="article" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:creator" content="@vikasmalpani" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9998;</text></svg>" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-          tailwind.config = {
-              theme: {
-                        extend: {
-                                    colors: {
-                                                  cream: '#FDFBF7', warm: '#F7F3ED', sand: '#EDE8DF',
-                                                  bark: '#2C2416', walnut: '#4A3C2C', muted: '#8B7D6B',
-                                                  accent: '#C4631A', accentHover: '#A8520F',
-                                                  amber: '#D4920B', sage: '#5C7A5E', border: '#DDD6CA',
-                                    },
-                                    fontFamily: {
-                                                  serif: ['Playfair Display', 'Georgia', 'serif'],
-                                                  sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
-                                                  mono: ['JetBrains Mono', 'monospace'],
-                                    }
-                        }
-              }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Founder’s Playbook: What 3 Companies Taught Me About Building — Vikas Malpani</title>
+  <meta name="description" content="I’ve started three companies over 20 years. Each one taught me something the previous one couldn’t. Here’s the playbook — not the sanitized version, but the version I’d share over a long coffee." />
+  <meta property="og:title" content="The Founder’s Playbook: What 3 Companies Taught Me About Building — Vikas Malpani" />
+  <meta property="og:description" content="I’ve started three companies over 20 years. Each one taught me something the previous one couldn’t." />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:creator" content="@vikasmalpani" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9998;</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#FDFBF7', warm: '#F7F3ED', sand: '#EDE8DF',
+            bark: '#2C2416', walnut: '#4A3C2C', muted: '#8B7D6B',
+            accent: '#C4631A', accentHover: '#A8520F',
+            amber: '#D4920B', sage: '#5C7A5E', border: '#DDD6CA',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
           }
-            </script>
-      <style>
-            body { background: #FDFBF7; color: #2C2416; -webkit-font-smoothing: antialiased; }
-            ::selection { background: #C4631A; color: white; }
-            .accent-line { width: 48px; height: 3px; background: #C4631A; border-radius: 2px; }
-            blockquote { border-left: 3px solid #C4631A; padding-left: 1.5rem; font-style: italic; }
-            .prose p { margin-bottom: 1.5rem; }
-            .prose h2 { margin-top: 2.5rem; margin-bottom: 1rem; }
-            .reveal { opacity: 0; transform: translateY(20px); }
-            .reveal.visible { opacity: 1; transform: translateY(0); transition: opacity 0.6s ease, transform 0.6s ease; }
-          </style>
-  </head>
-  <body class="font-sans">
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background: #FDFBF7; color: #2C2416; -webkit-font-smoothing: antialiased; }
+    ::selection { background: #C4631A; color: white; }
+    .accent-line { width: 48px; height: 3px; background: #C4631A; border-radius: 2px; }
+    blockquote { border-left: 3px solid #C4631A; padding-left: 1.5rem; font-style: italic; }
+    .prose p { margin-bottom: 1.5rem; }
+    .prose h2 { margin-top: 2.5rem; margin-bottom: 1rem; }
+    .reveal { opacity: 0; transform: translateY(20px); }
+    .reveal.visible { opacity: 1; transform: translateY(0); transition: opacity 0.6s ease, transform 0.6s ease; }
+  </style>
+</head>
+<body class="font-sans">
 
-    <!-- NAV -->
-    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-border bg-cream/90 backdrop-blur-xl">
-        <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-              <a href="../index.html" class="font-serif text-xl font-bold tracking-tight text-bark">Vikas Malpani</a>a>
-              <div class="hidden md:flex items-center gap-8 text-sm font-medium text-muted">
-                      <a href="../index.html#essays" class="hover:text-bark transition">Essays</a>a>
-                      <a href="../index.html#track-record" class="hover:text-bark transition">Work</a>a>
-                      <a href="../index.html#investing" class="hover:text-bark transition">Investing</a>a>
-                      <a href="../about.html" class="hover:text-bark transition">About</a>a>
-                      <a href="../index.html#connect" class="hover:text-bark transition">Connect</a>a>
-              </div>div>
-              <a href="../index.html#connect" class="rounded-lg bg-bark px-4 py-2 text-sm font-medium text-cream hover:bg-walnut transition">Let's Talk</a>a>
-        </div>div>
-    </nav>nav>
+<!-- NAV -->
+<nav class="fixed top-0 left-0 right-0 z-50 border-b border-border bg-cream/90 backdrop-blur-xl">
+  <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+    <a href="../index.html" class="font-serif text-xl font-bold tracking-tight text-bark">Vikas Malpani</a>
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-muted">
+      <a href="../index.html#essays" class="hover:text-bark transition">Essays</a>
+      <a href="../index.html#track-record" class="hover:text-bark transition">Work</a>
+      <a href="../index.html#investing" class="hover:text-bark transition">Investing</a>
+      <a href="../about.html" class="hover:text-bark transition">About</a>
+      <a href="../index.html#connect" class="hover:text-bark transition">Connect</a>
+    </div>
+    <a href="../index.html#connect" class="rounded-lg bg-bark px-4 py-2 text-sm font-medium text-cream hover:bg-walnut transition">Let’s Talk</a>
+  </div>
+</nav>
 
-    <!-- ESSAY -->
-    <article class="pt-32 pb-16 md:pt-40 md:pb-24">
-        <div class="mx-auto max-w-3xl px-6">
+<!-- ESSAY -->
+<article class="pt-32 pb-16 md:pt-40 md:pb-24">
+  <div class="mx-auto max-w-3xl px-6">
 
-              <!-- Header -->
-              <div class="mb-12">
-                      <a href="../index.html#essays" class="inline-flex items-center gap-2 text-sm text-accent hover:text-accentHover transition mb-6">
-                                <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>svg>
-                                Back to Essays
-                      </a>a>
-                      <div class="accent-line mb-6"></div>div>
-                      <span class="inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent mb-4">Building</span>span>
-                      <h1 class="font-se— not the sanitized version you'd see in a TED talk, but the version I'd share over a long coffee.</p>
+    <!-- Header -->
+    <div class="mb-12">
+      <a href="../index.html#essays" class="inline-flex items-center gap-2 text-sm text-accent hover:text-accentHover transition mb-6">
+        <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>
+        Back to Essays
+      </a>
+      <div class="accent-line mb-6"></div>
+      <span class="inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent mb-4">Building</span>
+      <h1 class="font-serif text-3xl md:text-5xl font-bold leading-tight tracking-tight text-bark">The Founder’s Playbook: What 3 Companies Taught Me About Building</h1>
+      <div class="mt-6 flex items-center gap-4 text-sm text-muted">
+        <span>Vikas Malpani</span>
+        <span class="text-border">|</span>
+        <time>March 2026</time>
+        <span class="text-border">|</span>
+        <span>12 min read</span>
+      </div>
+    </div>
 
-                              <p>The gap between thinking about building and actually building is just starting. I learned that the hard way at 22, with no idea what I was doing. Twenty years later, with a $200M exit in my rearview and three more companies after that, I know something most ambitious people don't: experience teaches you less than you think. Each company is a new game. But there are patterns. There's a playbook.</p>
+    <!-- Body -->
+    <div class="prose max-w-none text-lg leading-relaxed text-walnut">
 
-                              <h2 class="font-serif text-2xl md:text-3xl font-bold text-bark">StringBuzz (2005–2007): Start Before You're Ready</h1>h2>
+      <p class="text-xl text-bark font-medium leading-relaxed">I’ve started three companies. Each one taught me something the previous one couldn’t. Here’s the playbook — not the sanitized version you’d see in a TED talk, but the version I’d share over a long coffee.</p>
 
-                      <p>At 22, I was studying software engineering at VTU Bangalore. I was nobody. No capital, no network, no credibility. Just an uncomfortable feeling that I could build something useful.</p>
-              
-                    <p>So I built StringBuzz — a social media analytics tool ahead of when social media analytics was a category. I didn't know how to raise money. I didn't know how to hire. I didn't know how to sell. I knew how to code, and I had conviction that the problem mattered. So I did it anyway.</p>
-              
-                    <p>StringBuzz never became a meaningful business. But it taught me something invaluable: the gap between perfectionism and action is paralysis. Every day you wait for clarity, for capital, for credentials, you're not getting smarter — you're getting older. The muscle you build shipping product is real. The experience of launching to users is real. The feedback loop of iteration is real. Everything else is theory.</p>
-              
-                    <p>This lesson shaped every company after. When I founded CommonFloor, I didn't wait to have all the answers. When I started Leher, I didn't wait for p</p></p>
-      </style>
-    </script></title>
-  </head>
+      <p>The gap between thinking about building and actually building is just starting. With a $200M exit in my rearview and two more companies after that, I know something most ambitious people don’t: experience teaches you less than you think. Each company is a new game. But there are patterns. There’s a playbook.</p>
+
+      <h2 class="font-serif text-2xl md:text-3xl font-bold text-bark">CommonFloor/maxHeap (2007–2016): Solve Real Problems, Not Interesting Ones</h2>
+
+      <p>In 2007, I was frustrated. My building in Bangalore. I wanted to know who lived in the apartments around me. I wanted to know what they paid for rent. I wanted to know if the water was good. I wanted transparency.</p>
+
+      <p>Instead, I got printed flyers. Flyers that were physically attached to walls with penciled apartment numbers and handwritten prices. If you wanted to see 10 apartments, you collected 10 flyers, made phone calls to brokers who put you through the ringer, and hoped they weren’t lying about the specs.</p>
+
+      <p>India’s real estate market was a temple to opacity. And opacity meant power — for brokers, for builders, for anyone with information asymmetry. Killing that asymmetry was a threat. So they said it was impossible. “India isn’t ready for online real estate. People don’t buy property on the internet.”</p>
+
+      <p>Every smart investor in 2007 believed that. But every intelligent founder knows that the biggest opportunities look impossible because the incumbents have built their moats out of invisibility. Opaque industries are the most valuable to disrupt, because the people who benefit from opacity will fight the hardest to keep it hidden.</p>
+
+      <p>We built CommonFloor (under maxHeap) to solve that one real problem: make real estate transparent. Not because it was interesting. Not because the TAM was big. But because the problem was obvious and broken.</p>
+
+      <p>We started with Bangalore. Then we scaled to 200+ cities. We mapped 10 million homes. We built a two-sided marketplace that connected buyers, sellers, brokers, and developers. We raised $69.6 million from Tiger Global, Accel, and Google Capital. We hit 70 lakh monthly visits.</p>
+
+      <p>And we learned something that will apply to every company I ever build: <strong>every great company starts by solving one person’s real problem</strong>. I didn’t want transparency as an abstract concept. I wanted it for my building, for my street, for my city. That specificity, that obsession with one person’s pain, is what gave CommonFloor its foundation.</p>
+
+      <p>In 2016, when Quikr approached us about a merger, the deal was valued at approximately $200 million. It was time. The market had changed. The category was saturated. And I had learned what CommonFloor had to teach me.</p>
+
+      <p>The lesson: Don’t build because you’re chasing a market. Build because you can’t not build. That obsession survives the grind, the rejections, the pivots, and the failure. It’s the difference between a founder and an entrepreneur.</p>
+      <h2 class="font-serif text-2xl md:text-3xl font-bold text-bark">Leher (2018–2022): Timing Is Not Optional</h2>
+
+      <p>After CommonFloor exited, I co-founded Leher with Atul Jaju, a former Goldman Sachs trader with 12 years of capital markets experience. We were obsessed with a simple insight: India’s communication was text-first. WhatsApp, Telegram, Instagram DMs. But what if people wanted to actually <em>talk</em> to each other in real time?</p>
+
+      <p>We built live audio and video social infrastructure in November 2019 — before Clubhouse even launched. We had the feature set, the vision, the technical execution. We got into the Google for Startups Accelerator in 2020. We raised $838K from Orios Venture Partners. We had product-market fit signals.</p>
+
+      <p>Then COVID hit, and suddenly live audio became essential. Clubhouse launched in March 2020 and captured the entire narrative. We had built the same thing months earlier, but they had the network effects, the timing, and (most importantly) the narrative dominance.</p>
+
+      <p>We learned a hard lesson: being right about the future isn’t enough. You have to be right about <em>when</em> the future arrives, and you have to have enough capital and narrative momentum to own that moment. Leher didn’t fail because of bad execution. It failed because we lacked the capital runway and media attention to compete in a winner-take-all market once Clubhouse entered.</p>
+
+      <p>Social platforms are not meritocracies. They’re power-law markets. The first mover with adequate capital wins. We had the first-mover advantage. We lost on capital and luck.</p>
+
+      <p>But Leher taught us something valuable: timing matters. Not as an excuse. But as a forcing function. If you’re in a category where timing is existential, you need either overwhelming capital or absolute clarity on how you’ll own a specific vertical before the bigger players notice.</p>
+
+      <p>One principle from Leher survived and became central to Garvik AI: <strong>“Communities over metrics.”</strong> We built Leher around the hypothesis that people wanted genuine connection, not metrics-driven engagement. That philosophy meant we built audio channels for mental health support, for parenting, for small-town entrepreneurship — not just celebrity talk shows. The metrics were smaller, but the connection was real. That choice didn’t save Leher. But it taught us how to think about sustainable communities, which shapes everything we do at Garvik.</p>
+
+      <h2 class="font-serif text-2xl md:text-3xl font-bold text-bark">Garvik AI / ReBillion.ai (2023—Present): Build Infrastructure, Not Features</h2>
+
+      <p>In 2023, Atul and I co-founded Garvik AI. We went back to first principles. We asked ourselves: What’s the biggest problem we can see that’s not obvious to most people?</p>
+
+      <p>The answer was this: Every large organization in the world is trying to deploy AI. Every one of them is failing because they don’t have the knowledge infrastructure to make it work. The LLMs are powerful. The models are good. But models without context are just expensive autocomplete.</p>
+
+      <p>Enterprise knowledge sits in seven different places: documents, emails, Slack, databases, APIs, customer data, and employee expertise. It’s fragmented, unstructured, and invisible. Organizations can’t find their own documents. They can’t surface expertise. They build the same solution three times because they didn’t know it already existed three times over.</p>
+
+      <p>This is the transparency problem all over again, but at a different scale.</p>
+
+      <p>We built ReBillion.ai — enterprise AI middleware that creates a unified knowledge layer. We started with banking. Then manufacturing. Then real estate (our native expertise). Then edtech. We got funded by ML Elevate. And we’re building the boring infrastructure that everyone else will build their products on top of.</p>
+
+      <p>This is the hardest lesson and the most important one: <strong>the most valuable companies build the layer everyone else builds on top of.</strong> Not the flashy consumer feature. Not the clever UX. The infrastructure. The foundation. The thing that’s not exciting but that becomes indispensable.</p>
+
+      <p>Stripe built payment infrastructure. Twilio built communication infrastructure. Datadog built observability infrastructure. They’re worth billions because infrastructure is table stakes for every company that comes after. Once the infrastructure exists, hundreds of companies are built on top of it.</p>
+
+      <p>Garvik/ReBillion.ai is our attempt to do that in enterprise AI. We’re not building a chatbot for law firms or a copilot for accountants. We’re building the foundational layer that law firms, accountants, manufacturers, bankers, and educators will need in order to deploy AI effectively.</p>
+
+      <h2 class="font-serif text-2xl md:text-3xl font-bold text-bark">The Meta-Playbook: Five Universal Truths</h2>
+
+      <p>Three companies. Twenty years. Different markets, different business models, different outcomes. But five lessons that repeat:</p>
+
+      <div class="my-8 rounded-xl bg-warm p-8 space-y-6">
+        <div>
+          <div class="flex items-start gap-3 mb-2">
+            <span class="text-accent font-mono font-bold text-lg">01</span>
+            <h3 class="text-bark font-serif font-bold text-lg m-0">Start Before You’re Ready</h3>
+          </div>
+          <p class="text-bark ml-11 m-0">Perfectionism is fear. The gap between thinking and doing is just doing. You learn more in 30 days of shipping than in 300 days of planning.</p>
+        </div>
+        <div>
+          <div class="flex items-start gap-3 mb-2">
+            <span class="text-accent font-mono font-bold text-lg">02</span>
+            <h3 class="text-bark font-serif font-bold text-lg m-0">Solve Real Problems, Not Interesting Ones</h3>
+          </div>
+          <p class="text-bark ml-11 m-0">The litmus test: Would <em>you</em> use this if it existed? Does it solve your actual problem, or just a problem you think exists? Obsession beats optimization every time.</p>
+        </div>
+        <div>
+          <div class="flex items-start gap-3 mb-2">
+            <span class="text-accent font-mono font-bold text-lg">03</span>
+            <h3 class="text-bark font-serif font-bold text-lg m-0">Trust Compounds</h3>
+          </div>
+          <p class="text-bark ml-11 m-0">I co-founded Leher with Atul. Then I co-founded Garvik with Atul again. The best co-founder relationship isn’t the one with perfect complementary skills. It’s the one where you’d go to war together.</p>
+        </div>
+        <div>
+          <div class="flex items-start gap-3 mb-2">
+            <span class="text-accent font-mono font-bold text-lg">04</span>
+            <h3 class="text-bark font-serif font-bold text-lg m-0">Timing Matters But Obsession Survives Bad Timing</h3>
+          </div>
+          <p class="text-bark ml-11 m-0">Leher had bad timing. But the lesson survived. Garvik is built on lessons that bad timing taught us. Timing is luck. Obsession is choice.</p>
+        </div>
+        <div>
+          <div class="flex items-start gap-3 mb-2">
+            <span class="text-accent font-mono font-bold text-lg">05</span>
+            <h3 class="text-bark font-serif font-bold text-lg m-0">Build Infrastructure, Not Features</h3>
+          </div>
+          <p class="text-bark ml-11 m-0">The unsexy work creates lasting value. Infrastructure is boring. It’s invisible. It’s the thing that everyone else builds on top of. And it’s worth more than a thousand clever features.</p>
+        </div>
+      </div>
+
+      <h2 class="font-serif text-2xl md:text-3xl font-bold text-bark">What I Tell Ambitious People</h2>
+
+      <p>When founders ask me what I’ve learned, I tell them this:</p>
+
+      <p>The playbook isn’t about finding the perfect idea. It’s about finding a real problem that bothers <em>you</em> enough that not working on it feels wrong. Then it’s about starting before you’re ready, because ready is a feeling, not a state. It’s about picking people you’d go to war with, because building a company is war — against the market, against your competitors, against your own doubts. And it’s about recognizing that the most valuable work is often the most invisible. Not the feature that users see. The infrastructure that makes thousands of features possible.</p>
+
+      <p>CommonFloor taught me to solve real problems obsessively. Leher taught me that timing and luck matter, but that obsession survives both. Garvik is teaching me about infrastructure and the long game.</p>
+
+      <p>If you’re building something right now, the playbook is simple: solve a real problem, start now, pick co-founders you’d go to war with, and build the boring infrastructure that everyone depends on.</p>
+
+      <blockquote class="my-8 text-xl text-walnut">
+        <p class="m-0">The most successful founders I know aren’t the smartest or the luckiest. They’re the ones who couldn’t not build. That obsession is the only thing that survives bad timing, bad luck, and the thousand small failures that precede success.</p>
+      </blockquote>
+
+      <p>That obsession is available to you, right now. You don’t need permission. You don’t need capital. You don’t need a perfect plan. You just need to see a problem that’s broken, to care enough about it to do something about it, and to move faster than your doubts.</p>
+
+      <p>That’s the playbook. That’s what 20 years and three companies taught me. Now it’s up to you.</p>
+
+    </div>
+
+    <!-- Author / CTA -->
+    <div class="mt-16 rounded-xl border border-border bg-warm p-8 md:p-10">
+      <div class="flex flex-col md:flex-row md:items-center gap-6">
+        <div class="flex-1">
+          <h3 class="font-serif text-xl font-bold text-bark">Vikas Malpani</h3>
+          <p class="mt-2 text-sm text-muted">Builder. Thinker. Investor. Co-Founder of maxHeap (CommonFloor, $200M exit) and Garvik AI (ReBillion.ai). Earliest investor in Unacademy.</p>
+        </div>
+        <div class="flex gap-3">
+          <a href="https://x.com/vikasmalpani" target="_blank" rel="noopener noreferrer" class="rounded-lg border border-border px-4 py-2 text-sm font-medium text-muted hover:text-bark hover:border-bark transition">Follow on X</a>
+          <a href="https://linkedin.com/in/vikasmalpani" target="_blank" rel="noopener noreferrer" class="rounded-lg bg-bark px-4 py-2 text-sm font-medium text-cream hover:bg-walnut transition">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- More Essays -->
+    <div class="mt-12 border-t border-border pt-10">
+      <h3 class="font-serif text-xl font-bold text-bark mb-6">More Essays</h3>
+      <div class="space-y-4">
+        <a href="why-i-left-200m-exit.html" class="block rounded-lg border border-border p-5 hover:border-accent/30 hover:bg-warm/50 transition">
+          <span class="text-xs font-semibold text-accent">Building</span>
+          <h4 class="mt-1 font-serif text-lg font-semibold text-bark">Why I Left a $200M Exit to Start Again at Zero</h4>
+        </a>
+        <a href="enterprise-ai-gap.html" class="block rounded-lg border border-border p-5 hover:border-accent/30 hover:bg-warm/50 transition">
+          <span class="text-xs font-semibold text-sage">AI &amp; Technology</span>
+          <h4 class="mt-1 font-serif text-lg font-semibold text-bark">The Enterprise AI Gap Nobody Talks About</h4>
+        </a>
+        <a href="what-i-look-for-in-founders.html" class="block rounded-lg border border-border p-5 hover:border-accent/30 hover:bg-warm/50 transition">
+          <span class="text-xs font-semibold text-amber">Investing</span>
+          <h4 class="mt-1 font-serif text-lg font-semibold text-bark">What I Look For in Founders (It’s Not What VCs Say)</h4>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</article>
+
+<!-- FOOTER -->
+<footer class="border-t border-border py-8 bg-cream">
+  <div class="mx-auto flex max-w-5xl flex-col md:flex-row items-center justify-between gap-4 px-6">
+    <span class="text-sm text-muted">&copy; 2026 Vikas Malpani</span>
+    <div class="flex gap-6 text-sm text-muted">
+      <a href="https://rebillion.ai" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 hover:text-bark transition">ReBillion.ai</a>
+      <a href="https://linkedin.com/in/vikasmalpani" target="_blank" rel="noopener noreferrer" class="hover:text-bark transition">LinkedIn</a>
+      <a href="https://x.com/vikasmalpani" target="_blank" rel="noopener noreferrer" class="hover:text-bark transition">X</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
