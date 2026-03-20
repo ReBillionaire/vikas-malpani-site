@@ -3,159 +3,319 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vikas Malpani — Builder, Investor, Advisor</title>
-  <meta name="description" content="Co-founder of CommonFloor ($200M exit). Earliest investor in Unacademy (unicorn). Building Garvik AI. MIT TR35 Innovator." />
-  <meta property="og:title" content="Vikas Malpani — Builder, Investor, Advisor" />
-  <meta property="og:description" content="Co-founder of CommonFloor ($200M exit). Earliest investor in Unacademy (unicorn). Building Garvik AI. MIT TR35 Innovator." />
+  <title>Vikas Malpani — Builder, Thinker, Investor</title>
+  <meta name="description" content="Vikas Malpani: Co-founder of CommonFloor ($200M exit), earliest investor in Unacademy (unicorn), building Garvik AI. Writings on building, technology, and the future of India." />
+  <meta property="og:title" content="Vikas Malpani — Builder, Thinker, Investor" />
+  <meta property="og:description" content="Writings on building, investing, and the future of technology in India. From a $200M exit to backing unicorns." />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:creator" content="@vikasmalpani" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9998;</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            bg: '#0a0a0a', surface: '#141414', surface2: '#1a1a1a', border: '#262626',
-            txt: '#fafafa', muted: '#a1a1aa', accent: '#3b82f6', accentHover: '#60a5fa', gold: '#f59e0b',
+            cream: '#FDFBF7',
+            warm: '#F7F3ED',
+            sand: '#EDE8DF',
+            bark: '#2C2416',
+            walnut: '#4A3C2C',
+            muted: '#8B7D6B',
+            accent: '#C4631A',
+            accentHover: '#A8520F',
+            amber: '#D4920B',
+            sage: '#5C7A5E',
+            border: '#DDD6CA',
           },
-          fontFamily: { sans: ['-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica Neue','Arial','sans-serif'] }
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
         }
       }
     }
   </script>
   <style>
-    body{background:#0a0a0a;color:#fafafa;-webkit-font-smoothing:antialiased}
-    ::selection{background:#3b82f6;color:white}
-    @keyframes fadeInUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
-    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
-    .anim-up{opacity:0;animation:fadeInUp .7s ease-out forwards}
-    .anim-fade{opacity:0;animation:fadeIn .5s ease-out forwards}
-    .d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}.d4{animation-delay:.4s}.d5{animation-delay:.5s}
-    .card-hover{transition:all .3s ease}
-    .card-hover:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(59,130,246,.08);border-color:#3b82f6}
-    .glow-line{height:1px;background:linear-gradient(90deg,transparent,#3b82f6,transparent)}
-    .grid-bg{background-image:linear-gradient(#a1a1aa 1px,transparent 1px),linear-gradient(90deg,#a1a1aa 1px,transparent 1px);background-size:64px 64px}
-    .reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
-    .reveal.visible{opacity:1;transform:translateY(0)}
+    body { background: #FDFBF7; color: #2C2416; -webkit-font-smoothing: antialiased; }
+    ::selection { background: #C4631A; color: white; }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .anim-up { opacity: 0; animation: fadeInUp 0.7s ease-out forwards; }
+    .d1 { animation-delay: 0.1s; } .d2 { animation-delay: 0.2s; } .d3 { animation-delay: 0.3s; } .d4 { animation-delay: 0.4s; }
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(44,36,22,0.06); }
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .essay-link { transition: color 0.2s ease; }
+    .essay-link:hover { color: #C4631A; }
+    .accent-line { width: 48px; height: 3px; background: #C4631A; border-radius: 2px; }
+    blockquote { border-left: 3px solid #C4631A; padding-left: 1.5rem; font-style: italic; }
   </style>
-</head><body class="font-sans">
-<nav class="fixed top-0 left-0 right-0 z-50 border-b border-border bg-bg/80 backdrop-blur-xl">
-  <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-    <a href="#" class="text-lg font-bold tracking-tight">VM</a>
-    <div class="hidden md:flex items-center gap-8 text-sm text-muted">
-      <a href="#track-record" class="hover:text-white transition">Track Record</a>
-      <a href="#investing" class="hover:text-white transition">Investing</a>
-      <a href="#advisory" class="hover:text-white transition">Advisory</a>
-      <a href="#for-builders" class="hover:text-white transition">For Builders</a>
+</head>
+<body class="font-sans">
+
+<!-- NAV -->
+<nav class="fixed top-0 left-0 right-0 z-50 border-b border-border bg-cream/90 backdrop-blur-xl">
+  <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+    <a href="#" class="font-serif text-xl font-bold tracking-tight text-bark">Vikas Malpani</a>
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-muted">
+      <a href="#essays" class="hover:text-bark transition">Essays</a>
+      <a href="#track-record" class="hover:text-bark transition">Work</a>
+      <a href="#investing" class="hover:text-bark transition">Investing</a>
+      <a href="#advisory" class="hover:text-bark transition">Advisory</a>
+      <a href="#connect" class="hover:text-bark transition">Connect</a>
     </div>
-    <a href="#connect" class="rounded-lg bg-white px-4 py-2 text-sm font-medium text-black hover:bg-gray-200 transition">Let's Talk</a>
+    <a href="#connect" class="rounded-lg bg-bark px-4 py-2 text-sm font-medium text-cream hover:bg-walnut transition">Let's Talk</a>
   </div>
 </nav>
-<section class="relative overflow-hidden pt-32 pb-20 md:pt-44 md:pb-32">
-  <div class="pointer-events-none absolute inset-0 grid-bg opacity-[0.03]"></div>
-  <div class="pointer-events-none absolute top-20 left-1/2 -translate-x-1/2 h-[500px] w-[500px] rounded-full bg-accent opacity-[0.04] blur-[120px]"></div>
-  <div class="relative mx-auto max-w-6xl px-6">
-    <div class="anim-up">
-      <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-1.5 text-sm text-muted">
-        <span class="h-2 w-2 rounded-full bg-green-500"></span>Currently building Garvik AI
+
+<!-- HERO -->
+<section class="relative pt-32 pb-16 md:pt-44 md:pb-24">
+  <div class="relative mx-auto max-w-5xl px-6">
+    <div class="max-w-3xl">
+      <div class="anim-up">
+        <div class="accent-line mb-8"></div>
       </div>
-    </div>
-    <h1 class="anim-up d1 text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.1] tracking-tight">Vikas Malpani</h1>
-    <p class="anim-up d2 mt-6 max-w-2xl text-xl md:text-2xl leading-relaxed text-muted">Builder. Investor. Advisor. <span class="text-white">17 years of building technology companies</span>—from a $200M exit to backing India's next unicorns.</p>
-    <div class="anim-up d3 mt-10 flex flex-wrap gap-4">
-      <a href="#connect" class="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 text-sm font-semibold text-black hover:bg-gray-200 transition">Work With Me <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-      <a href="#track-record" class="inline-flex items-center gap-2 rounded-lg border border-border px-6 py-3 text-sm font-medium hover:border-muted transition">See Track Record</a>
-    </div>
-    <div class="anim-up d4 mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
-      <div><div class="text-2xl md:text-3xl font-bold">$200M</div><div class="mt-1 text-sm text-muted">CommonFloor Exit</div></div>
-      <div><div class="text-2xl md:text-3xl font-bold">2</div><div class="mt-1 text-sm text-muted">Unicorns</div></div>
-      <div><div class="text-2xl md:text-3xl font-bold">4</div><div class="mt-1 text-sm text-muted">Companies Founded</div></div>
-      <div><div class="text-2xl md:text-3xl font-bold">MIT TR35</div><div class="mt-1 text-sm text-muted">Young Innovator</div></div>
+      <h1 class="anim-up d1 font-serif text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.15] tracking-tight text-bark">
+        I build things that<br class="hidden md:block" /> move markets.
+      </h1>
+      <p class="anim-up d2 mt-6 max-w-2xl text-lg md:text-xl leading-relaxed text-muted">
+        Builder. Thinker. Investor. Seventeen years of starting companies, backing founders, and writing about what I've learned along the way.
+      </p>
+      <div class="anim-up d3 mt-8 flex flex-wrap items-center gap-6 text-sm text-muted">
+        <span class="flex items-center gap-2">
+          <span class="h-2 w-2 rounded-full bg-sage"></span>
+          Currently building <a href="https://garvik.ai" target="_blank" class="font-semibold text-bark hover:text-accent transition">Garvik AI</a>
+        </span>
+        <span class="hidden md:inline text-border">|</span>
+        <span>$200M exit with CommonFloor</span>
+        <span class="hidden md:inline text-border">|</span>
+        <span>Earliest investor in Unacademy</span>
+      </div>
     </div>
   </div>
 </section>
-<div class="glow-line"></div><section id="track-record" class="py-24 md:py-32">
-  <div class="mx-auto max-w-6xl px-6">
-    <div class="reveal mb-16">
-      <p class="mb-3 text-sm font-medium uppercase tracking-widest text-accent">Track Record</p>
-      <h2 class="text-3xl md:text-5xl font-bold tracking-tight">Built, scaled, exited.</h2>
-      <p class="mt-4 max-w-xl text-lg text-muted">From SAP Labs engineer to serial entrepreneur. Four companies, two unicorns, one clear pattern—building technology that moves markets.</p>
+
+<!-- PHILOSOPHY QUOTE -->
+<section class="py-12 md:py-16">
+  <div class="mx-auto max-w-5xl px-6">
+    <div class="reveal rounded-2xl bg-warm p-8 md:p-12">
+      <blockquote class="font-serif text-xl md:text-2xl leading-relaxed text-walnut">
+        The best companies aren't built by chasing markets. They're built by people who see a problem so clearly, they can't not solve it. Everything else follows from obsession.
+      </blockquote>
+      <p class="mt-4 text-sm font-medium text-muted">On building with conviction</p>
+    </div>
+  </div>
+</section>
+
+<!-- ESSAYS / BLOG -->
+<section id="essays" class="py-16 md:py-24">
+  <div class="mx-auto max-w-5xl px-6">
+    <div class="reveal mb-12">
+      <div class="accent-line mb-6"></div>
+      <h2 class="font-serif text-3xl md:text-4xl font-bold tracking-tight text-bark">Essays</h2>
+      <p class="mt-3 text-lg text-muted">Lessons from building four companies, investing in unicorns, and thinking about what comes next.</p>
+    </div>
+
+    <div class="space-y-0 divide-y divide-border">
+      <article class="reveal py-8 first:pt-0">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2 md:gap-8">
+          <div class="flex-1">
+            <span class="inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent mb-3">Building</span>
+            <h3 class="font-serif text-xl md:text-2xl font-semibold essay-link cursor-pointer text-bark">Why I Left a $200M Exit to Start Again at Zero</h3>
+            <p class="mt-2 text-muted leading-relaxed">After CommonFloor's acquisition, I could have retired. Instead, I started three more companies. Here's what I've learned about the difference between building for exits and building for meaning.</p>
+          </div>
+          <time class="text-sm text-muted whitespace-nowrap md:pt-10">Mar 2026</time>
+        </div>
+      </article>
+
+      <article class="reveal py-8">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2 md:gap-8">
+          <div class="flex-1">
+            <span class="inline-block rounded-full bg-sage/10 px-3 py-1 text-xs font-semibold text-sage mb-3">AI & Technology</span>
+            <h3 class="font-serif text-xl md:text-2xl font-semibold essay-link cursor-pointer text-bark">The Enterprise AI Gap Nobody Talks About</h3>
+            <p class="mt-2 text-muted leading-relaxed">Every enterprise wants AI. Almost none have the knowledge infrastructure to support it. This is the problem Garvik is solving, and why middleware matters more than models.</p>
+          </div>
+          <time class="text-sm text-muted whitespace-nowrap md:pt-10">Feb 2026</time>
+        </div>
+      </article>
+
+      <article class="reveal py-8">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2 md:gap-8">
+          <div class="flex-1">
+            <span class="inline-block rounded-full bg-amber/10 px-3 py-1 text-xs font-semibold text-amber mb-3">Investing</span>
+            <h3 class="font-serif text-xl md:text-2xl font-semibold essay-link cursor-pointer text-bark">What I Look For in Founders (It's Not What VCs Say)</h3>
+            <p class="mt-2 text-muted leading-relaxed">Most investors talk about TAM and traction. I look for something else entirely. After backing two unicorns, here's the pattern I've found in founders who build things that last.</p>
+          </div>
+          <time class="text-sm text-muted whitespace-nowrap md:pt-10">Jan 2026</time>
+        </div>
+      </article>
+
+      <article class="reveal py-8">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2 md:gap-8">
+          <div class="flex-1">
+            <span class="inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent mb-3">Building</span>
+            <h3 class="font-serif text-xl md:text-2xl font-semibold essay-link cursor-pointer text-bark">India's Real Estate Was Broken. We Fixed It With Technology.</h3>
+            <p class="mt-2 text-muted leading-relaxed">The CommonFloor story: how we went from a Bangalore apartment to 5 lakh listings across 200 cities, raised from Tiger Global, and merged with Quikr in a $200M deal.</p>
+          </div>
+          <time class="text-sm text-muted whitespace-nowrap md:pt-10">Dec 2025</time>
+        </div>
+      </article>
+
+      <article class="reveal py-8">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2 md:gap-8">
+          <div class="flex-1">
+            <span class="inline-block rounded-full bg-sage/10 px-3 py-1 text-xs font-semibold text-sage mb-3">AI & Technology</span>
+            <h3 class="font-serif text-xl md:text-2xl font-semibold essay-link cursor-pointer text-bark">Agentic AI Will Change How Founders Build Personal Brands</h3>
+            <p class="mt-2 text-muted leading-relaxed">The next wave of personal branding isn't about posting more. It's about AI agents that research, draft, distribute, and optimize your ideas across every platform while you focus on thinking.</p>
+          </div>
+          <time class="text-sm text-muted whitespace-nowrap md:pt-10">Nov 2025</time>
+        </div>
+      </article>
+    </div>
+
+    <div class="reveal mt-10 text-center">
+      <a href="#" class="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:text-accentHover transition">
+        Read all essays
+        <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- TRACK RECORD -->
+<section id="track-record" class="py-16 md:py-24 bg-warm">
+  <div class="mx-auto max-w-5xl px-6">
+    <div class="reveal mb-12">
+      <div class="accent-line mb-6"></div>
+      <h2 class="font-serif text-3xl md:text-4xl font-bold tracking-tight text-bark">Track Record</h2>
+      <p class="mt-3 text-lg text-muted">Four companies. Two unicorns. One pattern: build technology that moves markets.</p>
     </div>
     <div class="grid md:grid-cols-2 gap-6">
-      <div class="reveal card-hover rounded-xl border border-accent/30 bg-accent/[0.03] p-8">
-        <div class="mb-4 flex items-start justify-between">
-          <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-surface2"><svg class="h-5 w-5 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 21h18M3 7v14M21 7v14M6 11h.01M6 15h.01M6 19h.01M10 11h.01M10 15h.01M10 19h.01M14 11h.01M14 15h.01M14 19h.01M18 11h.01M18 15h.01M18 19h.01M3 7l9-4 9 4"/></svg></div>
-          <span class="text-xs text-muted">2007 – 2016</span>
+      <div class="reveal card-hover rounded-xl border border-accent/20 bg-cream p-8">
+        <div class="flex items-start justify-between mb-4">
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">
+            <svg class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            $200M Exit
+          </span>
+          <span class="text-xs text-muted">2007 - 2016</span>
         </div>
-        <h3 class="text-xl font-bold">CommonFloor.com</h3>
-        <p class="mt-1 text-sm text-accent">Co-Founder</p>
-        <span class="mt-3 inline-block rounded-full bg-gold/10 px-3 py-1 text-xs font-semibold text-gold">Acquired by Quikr for $200M</span>
-        <p class="mt-4 text-sm leading-relaxed text-muted">Transformed India's real estate market. Built to 5 lakh+ active listings across 200+ cities. Tiger Global backed. Merged with Quikr to create India's leading classifieds unicorn.</p>
+        <h3 class="font-serif text-xl font-bold text-bark">CommonFloor.com</h3>
+        <p class="mt-1 text-sm font-medium text-accent">Co-Founder</p>
+        <p class="mt-3 text-sm leading-relaxed text-muted">Transformed India's real estate market. Built to 5 lakh+ active listings across 200+ cities. Tiger Global backed. Merged with Quikr to create India's leading classifieds unicorn.</p>
       </div>
-      <div class="reveal card-hover rounded-xl border border-border bg-surface p-8">
-        <div class="mb-4 flex items-start justify-between">
-          <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-surface2"><svg class="h-5 w-5 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 0-8 8c0 3.4 2.1 6.3 5 7.5V20h6v-2.5c2.9-1.2 5-4.1 5-7.5a8 8 0 0 0-8-8zM10 22h4"/></svg></div>
-          <span class="text-xs text-muted">2023 – Present</span>
+      <div class="reveal card-hover rounded-xl border border-border bg-cream p-8">
+        <div class="flex items-start justify-between mb-4">
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-sage/10 px-3 py-1 text-xs font-semibold text-sage">
+            <span class="h-1.5 w-1.5 rounded-full bg-sage"></span>
+            Active
+          </span>
+          <span class="text-xs text-muted">2023 - Present</span>
         </div>
-        <h3 class="text-xl font-bold">Garvik AI</h3>
-        <p class="mt-1 text-sm text-accent">Co-Founder & CEO</p>
-        <span class="mt-3 inline-block rounded-full bg-surface2 px-3 py-1 text-xs font-medium text-muted">Building</span>
-        <p class="mt-4 text-sm leading-relaxed text-muted">AI middleware enabling enterprises to build company-wide knowledge search and CoPilot capabilities. Shaping Banking, Manufacturing, Real Estate, and EdTech.</p>
+        <h3 class="font-serif text-xl font-bold text-bark">Garvik AI</h3>
+        <p class="mt-1 text-sm font-medium text-accent">Co-Founder & CEO</p>
+        <p class="mt-3 text-sm leading-relaxed text-muted">AI middleware enabling enterprises to build company-wide knowledge search and CoPilot capabilities. Shaping Banking, Manufacturing, Real Estate, and EdTech.</p>
       </div>
-      <div class="reveal card-hover rounded-xl border border-border bg-surface p-8">
-        <div class="mb-4 flex items-start justify-between">
-          <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-surface2"><svg class="h-5 w-5 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-          <span class="text-xs text-muted">2018 – 2022</span>
+      <div class="reveal card-hover rounded-xl border border-border bg-cream p-8">
+        <div class="flex items-start justify-between mb-4">
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-warm px-3 py-1 text-xs font-medium text-muted">Exited</span>
+          <span class="text-xs text-muted">2018 - 2022</span>
         </div>
-        <h3 class="text-xl font-bold">Leher</h3>
-        <p class="mt-1 text-sm text-accent">Co-Founder & CEO</p>
-        <span class="mt-3 inline-block rounded-full bg-surface2 px-3 py-1 text-xs font-medium text-muted">Live Video Social Network</span>
-        <p class="mt-4 text-sm leading-relaxed text-muted">Pioneered live audio-video social networking in India. Built a platform for real-time dialogue across diverse topics, redefining digital communication.</p>
+        <h3 class="font-serif text-xl font-bold text-bark">Leher</h3>
+        <p class="mt-1 text-sm font-medium text-accent">Co-Founder & CEO</p>
+        <p class="mt-3 text-sm leading-relaxed text-muted">Pioneered live audio-video social networking in India. Built a platform for real-time dialogue across diverse topics, redefining digital communication.</p>
       </div>
-      <div class="reveal card-hover rounded-xl border border-border bg-surface p-8">
-        <div class="mb-4 flex items-start justify-between">
-          <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-surface2"><svg class="h-5 w-5 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+      <div class="reveal card-hover rounded-xl border border-border bg-cream p-8">
+        <div class="flex items-start justify-between mb-4">
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-warm px-3 py-1 text-xs font-medium text-muted">Earlier</span>
           <span class="text-xs text-muted">Earlier</span>
         </div>
-        <h3 class="text-xl font-bold">maxHeap</h3>
-        <p class="mt-1 text-sm text-accent">Founder</p>
-        <span class="mt-3 inline-block rounded-full bg-surface2 px-3 py-1 text-xs font-medium text-muted">Technology Venture</span>
-        <p class="mt-4 text-sm leading-relaxed text-muted">Technology venture focused on building scalable solutions. Part of the continuous entrepreneurial journey of shipping products and solving real problems.</p>
+        <h3 class="font-serif text-xl font-bold text-bark">maxHeap</h3>
+        <p class="mt-1 text-sm font-medium text-accent">Founder</p>
+        <p class="mt-3 text-sm leading-relaxed text-muted">Technology venture focused on building scalable solutions. Part of the continuous entrepreneurial journey of shipping products and solving real problems.</p>
+      </div>
+    </div>
+    <div class="reveal mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 rounded-xl bg-cream border border-border p-8">
+      <div class="text-center">
+        <div class="font-serif text-2xl md:text-3xl font-bold text-bark">$200M</div>
+        <div class="mt-1 text-sm text-muted">CommonFloor Exit</div>
+      </div>
+      <div class="text-center">
+        <div class="font-serif text-2xl md:text-3xl font-bold text-bark">2</div>
+        <div class="mt-1 text-sm text-muted">Unicorns</div>
+      </div>
+      <div class="text-center">
+        <div class="font-serif text-2xl md:text-3xl font-bold text-bark">4</div>
+        <div class="mt-1 text-sm text-muted">Companies Founded</div>
+      </div>
+      <div class="text-center">
+        <div class="font-serif text-2xl md:text-3xl font-bold text-bark">MIT TR35</div>
+        <div class="mt-1 text-sm text-muted">Young Innovator</div>
       </div>
     </div>
   </div>
-</section><section id="investing" class="py-24 md:py-32 bg-surface">
-  <div class="mx-auto max-w-6xl px-6">
-    <div class="reveal mb-16">
-      <p class="mb-3 text-sm font-medium uppercase tracking-widest text-accent">Angel Investing</p>
-      <h2 class="text-3xl md:text-5xl font-bold tracking-tight">Backing founders who build to last.</h2>
-      <p class="mt-4 max-w-xl text-lg text-muted">Early-stage bets on exceptional founders. Two unicorns and counting.</p>
+</section>
+
+<!-- INVESTING -->
+<section id="investing" class="py-16 md:py-24">
+  <div class="mx-auto max-w-5xl px-6">
+    <div class="reveal mb-12">
+      <div class="accent-line mb-6"></div>
+      <h2 class="font-serif text-3xl md:text-4xl font-bold tracking-tight text-bark">Investing</h2>
+      <p class="mt-3 text-lg text-muted">Early-stage bets on exceptional founders. Two unicorns and counting.</p>
     </div>
-    <div class="grid md:grid-cols-2 gap-6 mb-12">
-      <div class="reveal card-hover rounded-xl border border-gold/20 bg-gold/[0.03] p-8">
-        <div class="flex items-center gap-3 mb-4"><svg class="h-5 w-5 text-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><span class="text-xs font-semibold uppercase tracking-widest text-gold">Unicorn</span></div>
-        <h3 class="text-2xl font-bold">Unacademy</h3>
-        <p class="mt-1 text-sm text-accent">Earliest Angel Investor</p>
-        <p class="mt-3 text-sm text-muted">Backed Unacademy before anyone else did. The company went on to become one of India's most valuable ed-tech unicorns.</p>
+    <div class="grid md:grid-cols-2 gap-6 mb-10">
+      <div class="reveal card-hover rounded-xl border border-amber/20 bg-amber/[0.04] p-8">
+        <div class="flex items-center gap-2 mb-4">
+          <svg class="h-4 w-4 text-amber" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <span class="text-xs font-semibold uppercase tracking-widest text-amber">Unicorn</span>
+        </div>
+        <h3 class="font-serif text-2xl font-bold text-bark">Unacademy</h3>
+        <p class="mt-1 text-sm font-medium text-accent">Earliest Angel Investor</p>
+        <p class="mt-3 text-sm text-muted leading-relaxed">Backed Unacademy before anyone else did. The company went on to become one of India's most valuable ed-tech unicorns.</p>
       </div>
-      <div class="reveal card-hover rounded-xl border border-gold/20 bg-gold/[0.03] p-8">
-        <div class="flex items-center gap-3 mb-4"><svg class="h-5 w-5 text-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><span class="text-xs font-semibold uppercase tracking-widest text-gold">Unicorn</span></div>
-        <h3 class="text-2xl font-bold">Quikr</h3>
-        <p class="mt-1 text-sm text-accent">Via CommonFloor Merger</p>
-        <p class="mt-3 text-sm text-muted">CommonFloor's $200M all-stock acquisition by Quikr created India's leading classifieds platform—a unicorn built on real estate technology.</p>
+      <div class="reveal card-hover rounded-xl border border-amber/20 bg-amber/[0.04] p-8">
+        <div class="flex items-center gap-2 mb-4">
+          <svg class="h-4 w-4 text-amber" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <span class="text-xs font-semibold uppercase tracking-widest text-amber">Unicorn</span>
+        </div>
+        <h3 class="font-serif text-2xl font-bold text-bark">Quikr</h3>
+        <p class="mt-1 text-sm font-medium text-accent">Via CommonFloor Merger</p>
+        <p class="mt-3 text-sm text-muted leading-relaxed">CommonFloor's $200M all-stock acquisition by Quikr created India's leading classifieds platform.</p>
       </div>
     </div>
-    <div class="reveal rounded-xl border border-border bg-bg p-8 md:p-12">
-      <h3 class="text-xl font-bold mb-6">Investment Thesis</h3>
+    <div class="reveal rounded-xl border border-border bg-warm p-8 md:p-10">
+      <h3 class="font-serif text-xl font-bold text-bark mb-6">Investment Thesis</h3>
       <div class="grid md:grid-cols-3 gap-8">
-        <div><svg class="mb-3 h-5 w-5 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg><h4 class="font-semibold">Founder-First</h4><p class="mt-2 text-sm leading-relaxed text-muted">I back exceptional people, not just pitch decks. Founders who are obsessed with the problem, not the fundraise.</p></div>
-        <div><svg class="mb-3 h-5 w-5 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><h4 class="font-semibold">India-Scale Problems</h4><p class="mt-2 text-sm leading-relaxed text-muted">Technology solving problems unique to India's scale—real estate, education, enterprise AI, and emerging sectors.</p></div>
-        <div><svg class="mb-3 h-5 w-5 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09zM12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg><h4 class="font-semibold">Early & Active</h4><p class="mt-2 text-sm leading-relaxed text-muted">Seed and pre-seed. I don't just write checks—I roll up my sleeves. Strategy, hiring, product, GTM. Whatever it takes.</p></div>
+        <div>
+          <div class="mb-3 h-8 w-8 rounded-lg bg-accent/10 flex items-center justify-center">
+            <svg class="h-4 w-4 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          </div>
+          <h4 class="font-semibold text-bark">Founder-First</h4>
+          <p class="mt-2 text-sm leading-relaxed text-muted">I back exceptional people, not just pitch decks. Founders who are obsessed with the problem, not the fundraise.</p>
+        </div>
+        <div>
+          <div class="mb-3 h-8 w-8 rounded-lg bg-accent/10 flex items-center justify-center">
+            <svg class="h-4 w-4 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h4 class="font-semibold text-bark">India-Scale Problems</h4>
+          <p class="mt-2 text-sm leading-relaxed text-muted">Technology solving problems unique to India's scale: real estate, education, enterprise AI, and emerging sectors.</p>
+        </div>
+        <div>
+          <div class="mb-3 h-8 w-8 rounded-lg bg-accent/10 flex items-center justify-center">
+            <svg class="h-4 w-4 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09zM12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg>
+          </div>
+          <h4 class="font-semibold text-bark">Early & Active</h4>
+          <p class="mt-2 text-sm leading-relaxed text-muted">Seed and pre-seed. I don't just write checks. I roll up my sleeves: strategy, hiring, product, GTM.</p>
+        </div>
       </div>
     </div>
-    <div class="mt-8 flex flex-wrap gap-3">
+    <div class="reveal mt-8 flex flex-wrap gap-3">
       <span class="rounded-full border border-border px-4 py-2 text-sm text-muted">NxtWave</span>
       <span class="rounded-full border border-border px-4 py-2 text-sm text-muted">SeekAxis</span>
       <span class="rounded-full border border-border px-4 py-2 text-sm text-muted">Phyllo</span>
@@ -163,113 +323,174 @@
       <span class="rounded-full border border-dashed border-border px-4 py-2 text-sm text-muted">+ more</span>
     </div>
   </div>
-</section><section class="border-y border-border py-16">
-  <div class="mx-auto max-w-6xl px-6">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-      <div><svg class="mx-auto mb-3 h-5 w-5 text-muted" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg><div class="font-semibold">MIT TR35</div><div class="text-xs text-muted">Young Innovator</div></div>
-      <div><svg class="mx-auto mb-3 h-5 w-5 text-muted" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg><div class="font-semibold">BusinessWorld</div><div class="text-xs text-muted">Hottest Young Entrepreneur</div></div>
-      <div><svg class="mx-auto mb-3 h-5 w-5 text-muted" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 21h18M3 7v14M21 7v14M6 11h.01M6 15h.01M6 19h.01M10 11h.01M10 15h.01M10 19h.01M14 11h.01M14 15h.01M14 19h.01M18 11h.01M18 15h.01M18 19h.01M3 7l9-4 9 4"/></svg><div class="font-semibold">IIM Ahmedabad</div><div class="text-xs text-muted">Education</div></div>
-      <div><svg class="mx-auto mb-3 h-5 w-5 text-muted" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><div class="font-semibold">VTU Bangalore</div><div class="text-xs text-muted">Computer Science</div></div>
-    </div>
-  </div>
 </section>
-<section id="advisory" class="py-24 md:py-32">
-  <div class="mx-auto max-w-6xl px-6">
-    <div class="reveal mb-16">
-      <p class="mb-3 text-sm font-medium uppercase tracking-widest text-accent">Advisory</p>
-      <h2 class="text-3xl md:text-5xl font-bold tracking-tight">Advisor to the ambitious.</h2>
-      <p class="mt-4 max-w-xl text-lg text-muted">Strategic advisor to high-growth startups—including Y Combinator alumni. I bring operator experience, not just opinions.</p>
+
+<!-- ADVISORY & SPEAKING -->
+<section id="advisory" class="py-16 md:py-24 bg-warm">
+  <div class="mx-auto max-w-5xl px-6">
+    <div class="reveal mb-12">
+      <div class="accent-line mb-6"></div>
+      <h2 class="font-serif text-3xl md:text-4xl font-bold tracking-tight text-bark">Advisory & Speaking</h2>
+      <p class="mt-3 text-lg text-muted">Strategic advisor to high-growth startups, including Y Combinator alumni. Operator experience, not just opinions.</p>
     </div>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="reveal card-hover rounded-xl border border-border bg-surface p-8"><svg class="mb-4 h-6 w-6 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 0-8 8c0 3.4 2.1 6.3 5 7.5V20h6v-2.5c2.9-1.2 5-4.1 5-7.5a8 8 0 0 0-8-8zM10 22h4"/></svg><h3 class="text-lg font-bold">Product & Strategy</h3><p class="mt-3 text-sm leading-relaxed text-muted">Defining what to build, what to kill, and how to find product-market fit in complex markets. I've done this four times.</p></div>
-      <div class="reveal card-hover rounded-xl border border-border bg-surface p-8"><svg class="mb-4 h-6 w-6 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg><h3 class="text-lg font-bold">Scaling & GTM</h3><p class="mt-3 text-sm leading-relaxed text-muted">From zero to 200+ cities. I know what it takes to scale a product across India—distribution, partnerships, and growth loops.</p></div>
-      <div class="reveal card-hover rounded-xl border border-border bg-surface p-8"><svg class="mb-4 h-6 w-6 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><h3 class="text-lg font-bold">Fundraising & Exits</h3><p class="mt-3 text-sm leading-relaxed text-muted">Raised from Tiger Global. Executed a $200M exit. I help founders navigate the fundraise from seed to Series B and beyond.</p></div>
+    <div class="grid md:grid-cols-3 gap-6 mb-10">
+      <div class="reveal card-hover rounded-xl border border-border bg-cream p-8">
+        <div class="mb-4 h-8 w-8 rounded-lg bg-accent/10 flex items-center justify-center">
+          <svg class="h-4 w-4 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 0-8 8c0 3.4 2.1 6.3 5 7.5V20h6v-2.5c2.9-1.2 5-4.1 5-7.5a8 8 0 0 0-8-8zM10 22h4"/></svg>
+        </div>
+        <h3 class="font-semibold text-bark">Product & Strategy</h3>
+        <p class="mt-3 text-sm leading-relaxed text-muted">What to build, what to kill, and how to find product-market fit in complex markets. Done this four times.</p>
+      </div>
+      <div class="reveal card-hover rounded-xl border border-border bg-cream p-8">
+        <div class="mb-4 h-8 w-8 rounded-lg bg-accent/10 flex items-center justify-center">
+          <svg class="h-4 w-4 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        </div>
+        <h3 class="font-semibold text-bark">Scaling & GTM</h3>
+        <p class="mt-3 text-sm leading-relaxed text-muted">From zero to 200+ cities. I know what it takes to scale across India: distribution, partnerships, and growth loops.</p>
+      </div>
+      <div class="reveal card-hover rounded-xl border border-border bg-cream p-8">
+        <div class="mb-4 h-8 w-8 rounded-lg bg-accent/10 flex items-center justify-center">
+          <svg class="h-4 w-4 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3 class="font-semibold text-bark">Fundraising & Exits</h3>
+        <p class="mt-3 text-sm leading-relaxed text-muted">Raised from Tiger Global. Executed a $200M exit. I help founders navigate from seed to Series B and beyond.</p>
+      </div>
     </div>
-    <div class="reveal mt-16 rounded-xl border border-border bg-surface p-8 md:p-12">
+    <div class="reveal rounded-xl border border-border bg-cream p-8 md:p-10">
       <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-        <div><h3 class="text-xl font-bold">Speaking & Thought Leadership</h3><p class="mt-2 text-sm text-muted">Invited speaker at leading industry forums and premier institutions on entrepreneurship, real estate tech, and AI.</p></div>
-        <div class="flex flex-wrap gap-2"><span class="rounded-md bg-surface2 px-3 py-1.5 text-xs font-medium text-muted">FICCI</span><span class="rounded-md bg-surface2 px-3 py-1.5 text-xs font-medium text-muted">TiE</span><span class="rounded-md bg-surface2 px-3 py-1.5 text-xs font-medium text-muted">IIT</span><span class="rounded-md bg-surface2 px-3 py-1.5 text-xs font-medium text-muted">IIM</span><span class="rounded-md bg-surface2 px-3 py-1.5 text-xs font-medium text-muted">Babson</span><span class="rounded-md bg-surface2 px-3 py-1.5 text-xs font-medium text-muted">CyFy</span></div>
+        <div>
+          <h3 class="font-serif text-xl font-bold text-bark">Speaking & Thought Leadership</h3>
+          <p class="mt-2 text-sm text-muted">Invited speaker at leading industry forums and premier institutions on entrepreneurship, real estate tech, and AI.</p>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="rounded-md bg-warm px-3 py-1.5 text-xs font-medium text-walnut">FICCI</span>
+          <span class="rounded-md bg-warm px-3 py-1.5 text-xs font-medium text-walnut">TiE</span>
+          <span class="rounded-md bg-warm px-3 py-1.5 text-xs font-medium text-walnut">IIT</span>
+          <span class="rounded-md bg-warm px-3 py-1.5 text-xs font-medium text-walnut">IIM</span>
+          <span class="rounded-md bg-warm px-3 py-1.5 text-xs font-medium text-walnut">Babson</span>
+          <span class="rounded-md bg-warm px-3 py-1.5 text-xs font-medium text-walnut">CyFy</span>
+        </div>
+      </div>
+    </div>
+    <div class="reveal mt-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div>
+        <svg class="mx-auto mb-2 h-5 w-5 text-amber" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+        <div class="font-semibold text-bark text-sm">MIT TR35</div>
+        <div class="text-xs text-muted">Young Innovator</div>
+      </div>
+      <div>
+        <svg class="mx-auto mb-2 h-5 w-5 text-amber" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+        <div class="font-semibold text-bark text-sm">BusinessWorld</div>
+        <div class="text-xs text-muted">Hottest Young Entrepreneur</div>
+      </div>
+      <div>
+        <svg class="mx-auto mb-2 h-5 w-5 text-muted" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 21h18M3 7v14M21 7v14M6 11h.01M6 15h.01M6 19h.01M10 11h.01M10 15h.01M10 19h.01M14 11h.01M14 15h.01M14 19h.01M18 11h.01M18 15h.01M18 19h.01M3 7l9-4 9 4"/></svg>
+        <div class="font-semibold text-bark text-sm">IIM Ahmedabad</div>
+        <div class="text-xs text-muted">Education</div>
+      </div>
+      <div>
+        <svg class="mx-auto mb-2 h-5 w-5 text-muted" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <div class="font-semibold text-bark text-sm">VTU Bangalore</div>
+        <div class="text-xs text-muted">Computer Science</div>
       </div>
     </div>
   </div>
-</section><section id="for-builders" class="py-24 md:py-32 bg-surface">
-  <div class="mx-auto max-w-6xl px-6">
-    <div class="reveal mb-16">
-      <p class="mb-3 text-sm font-medium uppercase tracking-widest text-accent">For Builders & Entrepreneurs</p>
-      <h2 class="text-3xl md:text-5xl font-bold tracking-tight">Looking for your next move?</h2>
-      <p class="mt-4 max-w-xl text-lg text-muted">Whether you're a high-performance entrepreneur seeking an advisor, or exceptional talent looking to join the next big thing—let's talk.</p>
+</section>
+
+<!-- FOR BUILDERS -->
+<section class="py-16 md:py-24">
+  <div class="mx-auto max-w-5xl px-6">
+    <div class="reveal mb-12">
+      <div class="accent-line mb-6"></div>
+      <h2 class="font-serif text-3xl md:text-4xl font-bold tracking-tight text-bark">For Builders</h2>
+      <p class="mt-3 text-lg text-muted">Whether you're a founder seeking an advisor, or exceptional talent looking to build at the frontier of AI.</p>
     </div>
     <div class="grid md:grid-cols-2 gap-6">
-      <div class="reveal card-hover rounded-xl border border-border bg-bg p-8 md:p-10">
-        <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10"><svg class="h-6 w-6 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09zM12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></div>
-        <h3 class="text-2xl font-bold">For Entrepreneurs</h3>
-        <p class="mt-3 text-muted">Building something ambitious? I've been where you are—four times. I bring operating experience, investor networks, and a no-BS approach to advising.</p>
-        <ul class="mt-6 space-y-3">
-          <li class="flex items-start gap-3 text-sm text-muted"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>Strategic product & market advice</li>
-          <li class="flex items-start gap-3 text-sm text-muted"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>Access to investor and talent networks</li>
-          <li class="flex items-start gap-3 text-sm text-muted"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>Help navigating fundraising and exits</li>
-          <li class="flex items-start gap-3 text-sm text-muted"><svg class="mt-0.5 h-4 w-4 shrink-0 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>Real operator insights, not theory</li>
-        </ul>
-        <a href="#connect" class="mt-8 inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white hover:bg-accentHover transition">Get in Touch <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <div class="reveal card-hover rounded-xl border border-border bg-warm p-8 md:p-10">
+        <div class="mb-5 h-10 w-10 rounded-xl bg-accent/10 flex items-center justify-center">
+          <svg class="h-5 w-5 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09zM12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg>
+        </div>
+        <h3 class="font-serif text-2xl font-bold text-bark">For Entrepreneurs</h3>
+        <p class="mt-3 text-muted">Building something ambitious? I've been where you are, four times. Operating experience, investor networks, and a no-BS approach.</p>
+        <div class="mt-6 space-y-3">
+          <div class="flex items-start gap-3 text-sm text-muted"><span class="text-accent mt-0.5">→</span> Strategic product & market advice</div>
+          <div class="flex items-start gap-3 text-sm text-muted"><span class="text-accent mt-0.5">→</span> Access to investor and talent networks</div>
+          <div class="flex items-start gap-3 text-sm text-muted"><span class="text-accent mt-0.5">→</span> Help navigating fundraising and exits</div>
+        </div>
+        <a href="#connect" class="mt-8 inline-flex items-center gap-2 rounded-lg bg-bark px-5 py-2.5 text-sm font-semibold text-cream hover:bg-walnut transition">
+          Get in Touch <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
       </div>
-      <div class="reveal card-hover rounded-xl border border-border bg-bg p-8 md:p-10">
-        <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-gold/10"><svg class="h-6 w-6 text-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
-        <h3 class="text-2xl font-bold">For Talent</h3>
-        <p class="mt-3 text-muted">Exceptional engineers, designers, and operators who want to build at the frontier of AI. Garvik AI is hiring—and the mission is worth it.</p>
-        <ul class="mt-6 space-y-3">
-          <li class="flex items-start gap-3 text-sm text-muted"><svg class="mt-0.5 h-4 w-4 shrink-0 text-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>Work on enterprise AI infrastructure</li>
-          <li class="flex items-start gap-3 text-sm text-muted"><svg class="mt-0.5 h-4 w-4 shrink-0 text-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>Small team, massive impact</li>
-          <li class="flex items-start gap-3 text-sm text-muted"><svg class="mt-0.5 h-4 w-4 shrink-0 text-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>Direct access to founder + leadership</li>
-          <li class="flex items-start gap-3 text-sm text-muted"><svg class="mt-0.5 h-4 w-4 shrink-0 text-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>Build products used by Banks & Fortune 500s</li>
-        </ul>
-        <a href="#connect" class="mt-8 inline-flex items-center gap-2 rounded-lg border border-gold px-5 py-2.5 text-sm font-semibold text-gold hover:bg-gold/10 transition">Explore Opportunities <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-      </div>
-    </div>
-  </div>
-</section><section class="py-24 md:py-32">
-  <div class="mx-auto max-w-6xl px-6">
-    <div class="reveal mb-16">
-      <p class="mb-3 text-sm font-medium uppercase tracking-widest text-accent">Journey</p>
-      <h2 class="text-3xl md:text-5xl font-bold tracking-tight">17 years of building.</h2>
-    </div>
-    <div class="relative">
-      <div class="absolute left-[19px] md:left-1/2 md:-translate-x-px top-2 bottom-2 w-px bg-border"></div>
-      <div class="space-y-10">
-        <div class="reveal relative flex items-start gap-6 md:items-center"><div class="absolute left-3 md:left-1/2 md:-translate-x-1/2 z-10 h-3.5 w-3.5 rounded-full border-2 border-accent bg-bg"></div><div class="ml-12 md:ml-0 md:w-1/2 md:pr-16 md:text-right"><span class="text-xs font-bold uppercase tracking-widest text-accent">2006</span><p class="mt-1 text-sm text-muted">SAP Labs — NetWeaver Mobile Team</p></div></div>
-        <div class="reveal relative flex items-start gap-6 md:items-center md:flex-row-reverse"><div class="absolute left-3 md:left-1/2 md:-translate-x-1/2 z-10 h-3.5 w-3.5 rounded-full border-2 border-accent bg-bg"></div><div class="ml-12 md:ml-0 md:w-1/2 md:pl-16 md:text-left"><span class="text-xs font-bold uppercase tracking-widest text-accent">2007</span><p class="mt-1 text-sm text-muted">Co-founded CommonFloor.com</p></div></div>
-        <div class="reveal relative flex items-start gap-6 md:items-center"><div class="absolute left-3 md:left-1/2 md:-translate-x-1/2 z-10 h-3.5 w-3.5 rounded-full border-2 border-gold bg-bg"></div><div class="ml-12 md:ml-0 md:w-1/2 md:pr-16 md:text-right"><span class="text-xs font-bold uppercase tracking-widest text-gold">2012</span><p class="mt-1 text-sm text-muted">MIT TR35 Young Innovator Award</p></div></div>
-        <div class="reveal relative flex items-start gap-6 md:items-center md:flex-row-reverse"><div class="absolute left-3 md:left-1/2 md:-translate-x-1/2 z-10 h-4 w-4 rounded-full border-2 border-gold bg-gold/20"></div><div class="ml-12 md:ml-0 md:w-1/2 md:pl-16 md:text-left"><span class="text-xs font-bold uppercase tracking-widest text-gold">2016</span><p class="mt-1 text-sm text-white font-medium">CommonFloor acquired by Quikr ($200M)</p></div></div>
-        <div class="reveal relative flex items-start gap-6 md:items-center"><div class="absolute left-3 md:left-1/2 md:-translate-x-1/2 z-10 h-3.5 w-3.5 rounded-full border-2 border-accent bg-bg"></div><div class="ml-12 md:ml-0 md:w-1/2 md:pr-16 md:text-right"><span class="text-xs font-bold uppercase tracking-widest text-accent">2018</span><p class="mt-1 text-sm text-muted">Founded Leher — Live Video Social</p></div></div>
-        <div class="reveal relative flex items-start gap-6 md:items-center md:flex-row-reverse"><div class="absolute left-3 md:left-1/2 md:-translate-x-1/2 z-10 h-3.5 w-3.5 rounded-full border-2 border-accent bg-bg"></div><div class="ml-12 md:ml-0 md:w-1/2 md:pl-16 md:text-left"><span class="text-xs font-bold uppercase tracking-widest text-accent">2023</span><p class="mt-1 text-sm text-muted">Founded Garvik AI — Enterprise AI Middleware</p></div></div>
-        <div class="reveal relative flex items-start gap-6 md:items-center"><div class="absolute left-3 md:left-1/2 md:-translate-x-1/2 z-10 h-4 w-4 rounded-full border-2 border-green-500 bg-green-500/20"></div><div class="ml-12 md:ml-0 md:w-1/2 md:pr-16 md:text-right"><span class="text-xs font-bold uppercase tracking-widest text-green-500">Now</span><p class="mt-1 text-sm text-white font-medium">Building, investing, advising</p></div></div>
+      <div class="reveal card-hover rounded-xl border border-border bg-warm p-8 md:p-10">
+        <div class="mb-5 h-10 w-10 rounded-xl bg-sage/10 flex items-center justify-center">
+          <svg class="h-5 w-5 text-sage" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h3 class="font-serif text-2xl font-bold text-bark">For Talent</h3>
+        <p class="mt-3 text-muted">Exceptional engineers, designers, and operators who want to build at the frontier of AI. Garvik AI is hiring.</p>
+        <div class="mt-6 space-y-3">
+          <div class="flex items-start gap-3 text-sm text-muted"><span class="text-sage mt-0.5">→</span> Work on enterprise AI infrastructure</div>
+          <div class="flex items-start gap-3 text-sm text-muted"><span class="text-sage mt-0.5">→</span> Small team, massive impact</div>
+          <div class="flex items-start gap-3 text-sm text-muted"><span class="text-sage mt-0.5">→</span> Products used by Banks & Fortune 500s</div>
+        </div>
+        <a href="#connect" class="mt-8 inline-flex items-center gap-2 rounded-lg border border-bark px-5 py-2.5 text-sm font-semibold text-bark hover:bg-bark hover:text-cream transition">
+          Explore Opportunities <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
       </div>
     </div>
   </div>
 </section>
-<section id="connect" class="py-24 md:py-32 bg-surface">
+
+<!-- CTA / CONNECT -->
+<section id="connect" class="py-16 md:py-24 bg-bark text-cream">
   <div class="mx-auto max-w-3xl px-6 text-center">
-    <p class="mb-3 text-sm font-medium uppercase tracking-widest text-accent">Let's Connect</p>
-    <h2 class="text-3xl md:text-5xl font-bold tracking-tight">Building something worth building?</h2>
-    <p class="mx-auto mt-4 max-w-lg text-lg text-muted">Whether you're raising a round, looking for an advisor, or want to join Garvik AI—I'd love to hear from you.</p>
+    <div class="accent-line mx-auto mb-8"></div>
+    <h2 class="font-serif text-3xl md:text-5xl font-bold tracking-tight">Let's build something<br />worth building.</h2>
+    <p class="mx-auto mt-4 max-w-lg text-lg text-cream/70">Whether you're raising a round, looking for an advisor, or want to join Garvik AI. I'd love to hear from you.</p>
     <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-      <a href="mailto:v@garvik.ai" class="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 text-sm font-semibold text-black hover:bg-gray-200 transition"><svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>v@garvik.ai</a>
-      <a href="https://linkedin.com/in/vikasmalpani" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg border border-border px-6 py-3 text-sm font-medium hover:border-muted transition"><svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
-      <a href="https://x.com/vikasmalpani" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg border border-border px-6 py-3 text-sm font-medium hover:border-muted transition"><svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>X / Twitter</a>
+      <a href="mailto:v@garvik.ai" class="inline-flex items-center gap-2 rounded-lg bg-cream px-6 py-3 text-sm font-semibold text-bark hover:bg-sand transition">
+        <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        v@garvik.ai
+      </a>
+      <a href="https://linkedin.com/in/vikasmalpani" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg border border-cream/30 px-6 py-3 text-sm font-medium hover:border-cream/60 transition">
+        <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://x.com/vikasmalpani" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg border border-cream/30 px-6 py-3 text-sm font-medium hover:border-cream/60 transition">
+        <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        X / Twitter
+      </a>
     </div>
   </div>
 </section>
-<footer class="border-t border-border py-8">
-  <div class="mx-auto flex max-w-6xl flex-col md:flex-row items-center justify-between gap-4 px-6">
+
+<!-- FOOTER -->
+<footer class="border-t border-border py-8 bg-cream">
+  <div class="mx-auto flex max-w-5xl flex-col md:flex-row items-center justify-between gap-4 px-6">
     <span class="text-sm text-muted">&copy; 2026 Vikas Malpani</span>
     <div class="flex gap-6 text-sm text-muted">
-      <a href="https://garvik.ai" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 hover:text-white transition">Garvik AI <svg class="h-3 w-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg></a>
-      <a href="https://linkedin.com/in/vikasmalpani" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">LinkedIn</a>
-      <a href="https://x.com/vikasmalpani" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">X</a>
+      <a href="https://garvik.ai" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 hover:text-bark transition">
+        Garvik AI
+        <svg class="h-3 w-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/vikasmalpani" target="_blank" rel="noopener noreferrer" class="hover:text-bark transition">LinkedIn</a>
+      <a href="https://x.com/vikasmalpani" target="_blank" rel="noopener noreferrer" class="hover:text-bark transition">X</a>
     </div>
   </div>
 </footer>
+
+<!-- Scroll animations -->
 <script>
-  document.addEventListener('DOMContentLoaded',()=>{const o=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:.05,rootMargin:'0px 0px 100px 0px'});document.querySelectorAll('.reveal').forEach(e=>o.observe(e))});
+  document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px 100px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  });
 </script>
+
 </body>
-        </html>
+  </html>
