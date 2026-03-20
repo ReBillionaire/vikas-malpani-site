@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Enterprise AI Gap Nobody Talks About — Vikas Malpani</title>
+  <meta name="description" content="Every enterprise wants AI. Almost none have the knowledge infrastructure to support it. This is the problem ReBillion.ai is solving." />
+  <meta property="og:title" content="The Enterprise AI Gap Nobody Talks About — Vikas Malpani" />
+  <meta property="og:description" content="Why middleware matters more than models in enterprise AI." />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:creator" content="@vikasmalpani" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9998;</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#FDFBF7', warm: '#F7F3ED', sand: '#EDE8DF',
+            bark: '#2C2416', walnut: '#4A3C2C', muted: '#8B7D6B',
+            accent: '#C4631A', accentHover: '#A8520F',
+            amber: '#D4920B', sage: '#5C7A5E', border: '#DDD6CA',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background: #FDFBF7; color: #2C2416; -webkit-font-smoothing: antialiased; }
+    ::selection { background: #C4631A; color: white; }
+    .accent-line { width: 48px; height: 3px; background: #C4631A; border-radius: 2px; }
+    blockquote { border-left: 3px solid #C4631A; padding-left: 1.5rem; font-style: italic; }
+    .prose p { margin-bottom: 1.5rem; }
+    .prose h2 { margin-top: 2.5rem; margin-bottom: 1rem; }
+  </style>
+</head>
+<body class="font-sans">
+
+<!-- NAV -->
+<nav class="fixed top-0 left-0 right-0 z-50 border-b border-border bg-cream/90 backdrop-blur-xl">
+  <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+    <a href="../index.html" class="font-serif text-xl font-bold tracking-tight text-bark">Vikas Malpani</a>
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-muted">
+      <a href="../index.html#essays" class="hover:text-bark transition">Essays</a>
+      <a href="../index.html#track-record" class="hover:text-bark transition">Work</a>
+      <a href="../index.html#investing" class="hover:text-bark transition">Investing</a>
+      <a href="../index.html#connect" class="hover:text-bark transition">Connect</a>
+    </div>
+    <a href="../index.html#connect" class="rounded-lg bg-bark px-4 py-2 text-sm font-medium text-cream hover:bg-walnut transition">Let’s Talk</a>
+  </div>
+</nav>
+
+<!-- ESSAY -->
+<article class="pt-32 pb-16 md:pt-40 md:pb-24">
+  <div class="mx-auto max-w-3xl px-6">
+
+    <!-- Header -->
+    <div class="mb-12">
+      <a href="../index.html#essays" class="inline-flex items-center gap-2 text-sm text-accent hover:text-accentHover transition mb-6">
+        <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to Essays
+      </a>
+      <div class="accent-line mb-6"></div>
+      <span class="inline-block rounded-full bg-sage/10 px-3 py-1 text-xs font-semibold text-sage mb-4">AI & Technology</span>
+      <h1 class="font-serif text-3xl md:text-5xl font-bold leading-tight tracking-tight text-bark">The Enterprise AI Gap Nobody Talks About</h1>
+      <div class="mt-6 flex items-center gap-4 text-sm text-muted">
+        <span>Vikas Malpani</span>
+        <span class="text-border">|</span>
+        <time>February 2026</time>
+        <span class="text-border">|</span>
+        <span>10 min read</span>
+      </div>
+    </div>
+
+    <!-- Body -->
+    <div class="prose max-w-none text-lg leading-relaxed text-walnut">
+
+      <p class="text-xl text-bark font-medium leading-relaxed">Every Fortune 500 company wants AI. Almost none have the knowledge infrastructure to make it work. The models are brilliant. The implementations are failing. And the reason has nothing to do with the models.</p>
+
+      <p>I’ve spent the last two years talking to CTOs and CIOs across Banking, Manufacturing, Real Estate, and EdTech. The conversation follows a remarkably predictable pattern. They’re excited about AI. They’ve run pilots. Some have even deployed chatbots. But when you ask about real impact &mdash; about AI that actually changes how their organization operates &mdash; the excitement fades into frustration.</p>
+
+      <p>The problem isn’t the AI. The problem is everything between the AI and the organization’s actual knowledge.</p>
+
+      <h2 class="font-serif text-2xl md:text-3xl font-bold text-bark">The Knowledge Infrastructure Crisis</h2>
+
+      <p>Here’s what a typical enterprise looks like from an AI perspective: thousands of documents scattered across SharePoint, Confluence, Google Drive, and legacy systems. Decades of institutional knowledge trapped in email threads. Critical processes documented in PDFs that haven’t been updated since 2019. Tribal knowledge that exists only in the heads of employees who are three years from retirement.</p>
+
+      <p>Now imagine plugging a large language model into this mess. What do you get? An AI that confidently generates plausible-sounding answers based on incomplete, outdated, and contradictory information. In a consumer context, that’s annoying. In an enterprise context &mdash; where decisions affect compliance, operations, and revenue &mdash; it’s dangerous.</p>
+
+      <p>This is the gap nobody talks about. Not the AI gap. The <em>knowledge infrastructure</em> gap.</p>
+
+      <div class="my-8 rounded-xl bg-warm p-8">
+        <h3 class="font-serif text-xl font-bold text-bark mb-4">The Three Layers of Enterprise AI</h3>
+        <div class="space-y-4">
+          <div class="flex items-start gap-4">
+            <span class="flex-shrink-0 h-8 w-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent font-mono font-bold text-sm">1</span>
+            <div>
+              <p class="font-semibold text-bark m-0">Models (Solved)</p>
+              <p class="text-sm text-muted m-0 mt-1">GPT-4, Claude, Gemini &mdash; the foundation models are extraordinary. This layer is commoditizing fast.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <span class="flex-shrink-0 h-8 w-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent font-mono font-bold text-sm">2</span>
+            <div>
+              <p class="font-semibold text-bark m-0">Middleware (The Gap)</p>
+              <p class="text-sm text-muted m-0 mt-1">Knowledge ingestion, retrieval, context assembly, access control, audit trails. This is where most deployments fail.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <span class="flex-shrink-0 h-8 w-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent font-mono font-bold text-sm">3</span>
+            <div>
+              <p class="font-semibold text-bark m-0">Application (Dependent)</p>
+              <p class="text-sm text-muted m-0 mt-1">Chatbots, CoPilots, search, automation &mdash; only as good as the middleware feeding them.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="font-serif text-2xl md:text-3xl font-bold text-bark">Why Middleware Matters More Than Models</h2>
+
+      <p>The AI industry is obsessed with models. Bigger models. Faster models. Cheaper models. And models are genuinely amazing &mdash; what GPT-4 and Claude can do today would have been science fiction five years ago.</p>
+      <p>But here’s the thing: models are becoming commoditized. The difference between the top five foundation models is shrinking every quarter. In two years, the model layer will be a utility, like cloud computing. You won’t choose your AI provider based on the model. You’ll choose based on everything else.</p>
+
+      <p>That "everything else" is middleware. And it’s brutally hard to build well.</p>
+
+      <p>Enterprise middleware for AI needs to solve problems that most AI startups aren’t even thinking about. How do you ingest documents from 47 different systems with 47 different formats? How do you maintain access controls so that a junior analyst can’t accidentally query executive-only financial data through a chatbot? How do you create audit trails so that when the AI gives an answer, you can trace it back to the specific documents it drew from? How do you handle versioning when a policy document gets updated but the AI’s vector embeddings still reflect the old version?</p>
+
+      <p>These aren’t glamorous problems. They don’t make for exciting demo days. But they’re the problems that determine whether enterprise AI actually works or remains a perpetual pilot.</p>
+
+      <h2 class="font-serif text-2xl md:text-3xl font-bold text-bark">What We’re Building at ReBillion.ai</h2>
+
+      <p>This is exactly why we built ReBillion.ai at Garvik AI. We’re not building another chatbot. We’re not building another model. We’re building the middleware layer that connects an enterprise’s actual knowledge to any AI model, with the security, accuracy, and auditability that enterprises require.</p>
+
+      <p>Our approach has three core convictions:</p>
+
+      <p><strong>First, knowledge infrastructure is the bottleneck.</strong> We focus relentlessly on ingestion, transformation, and retrieval of enterprise knowledge. We handle 200+ document formats, maintain real-time sync with source systems, and build knowledge graphs that capture relationships between documents, people, and processes.</p>
+
+      <p><strong>Second, security is not a feature &mdash; it’s the architecture.</strong> Every query passes through role-based access controls. Every answer includes source citations. Every interaction is logged for audit. Banks trust us with their data because security isn’t something we added after the fact &mdash; it’s how the system was designed from day one.</p>
+
+      <p><strong>Third, the model should be replaceable.</strong> We’re model-agnostic by design. When a better model emerges &mdash; and it will, every six months &mdash; our customers can switch without rebuilding their entire AI infrastructure. The middleware is the constant. The model is the variable.</p>
+
+      <h2 class="font-serif text-2xl md:text-3xl font-bold text-bark">The Three Things Enterprises Get Wrong</h2>
+
+      <p>Having worked with organizations across four industries, I see the same mistakes repeated:</p>
+
+      <p><strong>Mistake 1: Starting with the model instead of the data.</strong> "Let’s deploy GPT-4 and see what happens" is the enterprise equivalent of "let’s build an app and see who downloads it." Start with the knowledge. Map it. Clean it. Structure it. Then add AI on top.</p>
+
+      <p><strong>Mistake 2: Treating AI deployment like a software deployment.</strong> Enterprise AI isn’t a feature you ship once. It’s a system that needs to continuously learn, adapt, and improve as the organization’s knowledge evolves. The deployment is day one, not day done.</p>
+
+      <p><strong>Mistake 3: Ignoring the human layer.</strong> The best enterprise AI doesn’t replace humans. It augments them. The goal isn’t to automate the expert out of the loop &mdash; it’s to give every employee access to the organization’s collective expertise. The expert becomes more valuable, not less.</p>
+
+      <blockquote class="my-8 text-xl text-walnut">
+        <p class="m-0">The companies that win the enterprise AI race won’t be the ones with the best models. They’ll be the ones with the best middleware &mdash; the invisible infrastructure that turns raw AI capability into organizational intelligence.</p>
+      </blockquote>
+
+      <h2 class="font-serif text-2xl md:text-3xl font-bold text-bark">The Future Is Infrastructure</h2>
+
+      <p>We’re at an inflection point. The AI hype cycle is beginning to give way to the AI infrastructure cycle. Executives are moving past "Can AI do this?" to "How do we make AI work reliably, securely, and at scale?"</p>
+
+      <p>The answers to those questions live in the middleware layer. In knowledge infrastructure. In the boring, unglamorous, absolutely essential work of connecting brilliant AI models to the messy reality of how organizations actually operate.</p>
+
+      <p>That’s the enterprise AI gap nobody talks about. And it’s the most important problem in AI today.</p>
+
+      <p>We’re building the solution at <a href="https://rebillion.ai" target="_blank" class="text-accent hover:text-accentHover underline transition">ReBillion.ai</a>. If your organization is wrestling with this gap, I’d love to talk.</p>
+
+    </div>
+
+    <!-- Author / CTA -->
+    <div class="mt-16 rounded-xl border border-border bg-warm p-8 md:p-10">
+      <div class="flex flex-col md:flex-row md:items-center gap-6">
+        <div class="flex-1">
+          <h3 class="font-serif text-xl font-bold text-bark">Vikas Malpani</h3>
+          <p class="mt-2 text-sm text-muted">Co-Founder & CEO at Garvik AI, building ReBillion.ai. Previously co-founded maxHeap (CommonFloor, $200M exit). Earliest investor in Unacademy.</p>
+        </div>
+        <div class="flex gap-3">
+          <a href="https://x.com/vikasmalpani" target="_blank" rel="noopener noreferrer" class="rounded-lg border border-border px-4 py-2 text-sm font-medium text-muted hover:text-bark hover:border-bark transition">Follow on X</a>
+          <a href="https://linkedin.com/in/vikasmalpani" target="_blank" rel="noopener noreferrer" class="rounded-lg bg-bark px-4 py-2 text-sm font-medium text-cream hover:bg-walnut transition">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- More Essays -->
+    <div class="mt-12 border-t border-border pt-10">
+      <h3 class="font-serif text-xl font-bold text-bark mb-6">More Essays</h3>
+      <div class="space-y-4">
+        <a href="why-i-left-200m-exit.html" class="block rounded-lg border border-border p-5 hover:border-accent/30 hover:bg-warm/50 transition">
+          <span class="text-xs font-semibold text-accent">Building</span>
+          <h4 class="mt-1 font-serif text-lg font-semibold text-bark">Why I Left a $200M Exit to Start Again at Zero</h4>
+        </a>
+        <a href="agentic-ai-personal-brands.html" class="block rounded-lg border border-border p-5 hover:border-accent/30 hover:bg-warm/50 transition">
+          <span class="text-xs font-semibold text-sage">AI & Technology</span>
+          <h4 class="mt-1 font-serif text-lg font-semibold text-bark">Agentic AI Will Change How Founders Build Personal Brands</h4>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</article>
+
+<!-- FOOTER -->
+<footer class="border-t border-border py-8 bg-cream">
+  <div class="mx-auto flex max-w-5xl flex-col md:flex-row items-center justify-between gap-4 px-6">
+    <span class="text-sm text-muted">&copy; 2026 Vikas Malpani</span>
+    <div class="flex gap-6 text-sm text-muted">
+      <a href="https://rebillion.ai" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 hover:text-bark transition">ReBillion.ai</a>
+      <a href="https://linkedin.com/in/vikasmalpani" target="_blank" rel="noopener noreferrer" class="hover:text-bark transition">LinkedIn</a>
+      <a href="https://x.com/vikasmalpani" target="_blank" rel="noopener noreferrer" class="hover:text-bark transition">X</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
