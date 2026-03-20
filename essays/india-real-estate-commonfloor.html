@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>India’s Real Estate Was Broken. We Fixed It With Technology. — Vikas Malpani</title>
+  <meta name="description" content="The CommonFloor story: how maxHeap went from a Bangalore apartment to 5 lakh listings, raised from Tiger Global, and merged with Quikr in a $200M deal." />
+  <meta property="og:title" content="India’s Real Estate Was Broken. We Fixed It With Technology. — Vikas Malpani" />
+  <meta property="og:description" content="The maxHeap / CommonFloor story: from a Bangalore apartment to a $200M exit." />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:creator" content="@vikasmalpani" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9998;</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#FDFBF7', warm: '#F7F3ED', sand: '#EDE8DF',
+            bark: '#2C2416', walnut: '#4A3C2C', muted: '#8B7D6B',
+            accent: '#C4631A', accentHover: '#A8520F',
+            amber: '#D4920B', sage: '#5C7A5E', border: '#DDD6CA',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background: #FDFBF7; color: #2C2416; -webkit-font-smoothing: antialiased; }
+    ::selection { background: #C4631A; color: white; }
+    .accent-line { width: 48px; height: 3px; background: #C4631A; border-radius: 2px; }
+    blockquote { border-left: 3px solid #C4631A; padding-left: 1.5rem; font-style: italic; }
+    .prose p { margin-bottom: 1.5rem; }
+    .prose h2 { margin-top: 2.5rem; margin-bottom: 1rem; }
+  </style>
+</head>
+<body class="font-sans">
+
+<!-- NAV -->
+<nav class="fixed top-0 left-0 right-0 z-50 border-b border-border bg-cream/90 backdrop-blur-xl">
+  <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+    <a href="../index.html" class="font-serif text-xl font-bold tracking-tight text-bark">Vikas Malpani</a>
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-muted">
+      <a href="../index.html#essays" class="hover:text-bark transition">Essays</a>
+      <a href="../index.html#track-record" class="hover:text-bark transition">Work</a>
+      <a href="../index.html#investing" class="hover:text-bark transition">Investing</a>
+      <a href="../index.html#connect" class="hover:text-bark transition">Connect</a>
+    </div>
+    <a href="../index.html#connect" class="rounded-lg bg-bark px-4 py-2 text-sm font-medium text-cream hover:bg-walnut transition">Let’s Talk</a>
+  </div>
+</nav>
+
+<!-- ESSAY -->
+<article class="pt-32 pb-16 md:pt-40 md:pb-24">
+  <div class="mx-auto max-w-3xl px-6">
+
+    <div class="mb-12">
+      <a href="../index.html#essays" class="inline-flex items-center gap-2 text-sm text-accent hover:text-accentHover transition mb-6">
+        <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to Essays
+      </a>
+      <div class="accent-line mb-6"></div>
+      <span class="inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent mb-4">Building</span>
+      <h1 class="font-serif text-3xl md:text-5xl font-bold leading-tight tracking-tight text-bark">India’s Real Estate Was Broken. We Fixed It With Technology.</h1>
+      <div class="mt-6 flex items-center gap-4 text-sm text-muted">
+        <span>Vikas Malpani</span>
+        <span class="text-border">|</span>
+        <time>December 2025</time>
+        <span class="text-border">|</span>
+        <span>11 min read</span>
+      </div>
+    </div>
+
+    <div class="prose max-w-none text-lg leading-relaxed text-walnut">
+
+      <p class="text-xl text-bark font-medium leading-relaxed">In 2007, if you wanted to buy a flat in Bangalore, you had exactly two options: walk into a broker’s office and trust whatever they told you, or spend weeks visiting every builder’s site office across the city. There was no data. No comparison. No transparency. Just opacity designed to maximize broker commissions.</p>
+
+      <p>That was the India we started maxHeap in. A country where real estate was the single largest financial decision most families would ever make &mdash; and they were making it almost completely blind.</p>
+
+      <h2 class="font-serif text-2xl md:text-3xl font-bold text-bark">The Problem Was Obvious. The Timing Wasn’t.</h2>
+
+      <p>When we started maxHeap and built CommonFloor.com, India’s internet penetration was roughly 4%. Smartphones barely existed. The idea of searching for apartments online seemed as practical as ordering groceries through a fax machine.</p>
+
+      <p>But we could see something most people couldn’t: the gap between how Indians <em>wanted</em> to discover real estate and how they were <em>forced</em> to discover it was enormous. The information asymmetry was staggering. Brokers had all the information. Buyers had none. And in a market where a single flat could cost a family’s entire lifetime savings, that asymmetry wasn’t just inconvenient &mdash; it was unjust.</p>
+
+      <p>We started from a two-bedroom apartment in Bangalore. Three founders, no funding, and a conviction that the internet would eventually transform how India bought and sold property. The "eventually" part was the risk. We were building for a future that was at least three to five years away.</p>
+
+      <h2 class="font-serif text-2xl md:text-3xl font-bold text-bark">Building a Marketplace City by City</h2>
+
+      <p>CommonFloor was a classic cold-start marketplace problem. Buyers only come if there are listings. Builders only list if there are buyers. The chicken-and-egg problem that kills most marketplace startups nearly killed us too.</p>
+
+      <p>Our approach was unglamorous but effective: we started with Bangalore and went deep before going wide. We personally met every major builder in the city. We physically verified listings. We created detailed property profiles with floor plans, amenities, and neighborhood information that no one else had bothered to compile.</p>
+
+      <p>The key insight was that the <em>information itself</em> was the product, not just the platform. Buyers weren’t looking for a marketplace. They were looking for truth. Accurate, verified, comparable information about the single most expensive thing they’d ever buy. If we could be the most trusted source of that information, the marketplace dynamics would follow.</p>
+
+      <div class="my-8 rounded-xl bg-warm p-8">
+        <h3 class="font-serif text-lg font-bold text-bark mb-4">CommonFloor by the Numbers</h3>
+        <div class="grid grid-cols-2 gap-6">
+          <div>
+            <div class="font-serif text-2xl font-bold text-accent">5 lakh+</div>
+            <p class="text-sm text-muted m-0">Active property listings</p>
+          </div>
+          <div>
+            <div class="font-serif text-2xl font-bold text-accent">200+</div>
+            <p class="text-sm text-muted m-0">Cities across India</p>
+          </div>
+          <div>
+            <div class="font-serif text-2xl font-bold text-accent">Tiger Global</div>
+            <p class="text-sm text-muted m-0">Lead investor</p>
+          </div>
+          <div>
+            <div class="font-serif text-2xl font-bold text-accent">$200M</div>
+            <p class="text-sm text-muted m-0">Merger valuation with Quikr</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="font-serif text-2xl md:text-3xl font-bold text-bark">What Tiger Global Saw</h2>
+
+      <p>When Tiger Global invested in CommonFloor, they weren’t just betting on a real estate portal. They were betting on three macro trends converging in India: rapidly increasing internet penetration, a massive housing demand driven by urbanization, and a generational shift where young Indian buyers would demand transparency in everything &mdash; including property transactions.</p>
+
+      <p>Tiger’s investment gave us the fuel to expand from Bangalore to every major Indian city. We went from a Bangalore-only platform to a national one in under two years. The playbook was the same in every city: go deep on data quality, build trust through accuracy, and let word-of-mouth among buyers do the marketing.</p>
+
+      <p>By the time we were operating in 200+ cities with over 5 lakh active listings, CommonFloor had become the default first stop for anyone researching property in India. We’d done to real estate information what Google had done to web search: organized it, made it accessible, and made it trustworthy.</p>
+
+      <h2 class="font-serif text-2xl md:text-3xl font-bold text-bark">The Quikr Merger</h2>
+
+      <p>In 2016, CommonFloor merged with Quikr in what was valued as a $200M all-stock deal, creating India’s most comprehensive classifieds platform. The merger wasn’t just a financial transaction &mdash; it was a strategic consolidation that combined CommonFloor’s deep real estate expertise with Quikr’s massive horizontal classifieds platform.</p>
+
+      <p>Mergers are complicated. This one was no exception. But the logic was sound: real estate is fundamentally a classifieds problem, and the future belonged to platforms that could offer comprehensive coverage rather than vertical-only solutions. The combined entity had the breadth and the depth to dominate.</p>
+
+      <blockquote class="my-8 text-xl text-walnut">
+        <p class="m-0">Building CommonFloor taught me the most important lesson of my career: the hardest problems in technology aren’t technical. They’re about trust. Users don’t adopt technology &mdash; they adopt trustworthy technology.</p>
+      </blockquote>
+
+      <h2 class="font-serif text-2xl md:text-3xl font-bold text-bark">Lessons From Scaling Across India</h2>
+
+      <p><strong>Lesson 1: India is not one market.</strong> What works in Bangalore doesn’t work in Jaipur. What works in Mumbai doesn’t work in Lucknow. Language, buying behavior, property types, price ranges, broker dynamics &mdash; everything varies city by city. National scale in India requires city-level localization. There are no shortcuts.</p>
+
+      <p><strong>Lesson 2: Trust is your moat.</strong> In a market where every other listing was fraudulent or misleading, our insistence on verified, accurate data was our biggest competitive advantage. It was expensive and slow, but it built a brand that users trusted with their most important financial decision.</p>
+
+      <p><strong>Lesson 3: Timing is everything, and patience is the bridge.</strong> We started in 2007 but didn’t hit real scale until 2012-2013, when smartphone adoption crossed a tipping point. Five years of building before the market caught up. If we hadn’t had the conviction (and the frugality) to survive those early years, we wouldn’t have been positioned when the wave hit.</p>
+
+      <p><strong>Lesson 4: The team is the company.</strong> We scaled from 3 co-founders to a team of hundreds across India. Every culture decision we made in the first 20 hires echoed through the entire organization. The early team defined the company’s DNA &mdash; its values, work ethic, and standards for quality.</p>
+
+      <h2 class="font-serif text-2xl md:text-3xl font-bold text-bark">What CommonFloor Means for What I’m Building Now</h2>
+
+      <p>CommonFloor taught me that the most valuable thing you can build is a system that makes opaque information transparent. Real estate was opaque. We made it transparent. Enterprise knowledge is opaque. At <a href="https://rebillion.ai" target="_blank" class="text-accent hover:text-accentHover underline transition">ReBillion.ai</a>, we’re making it transparent.</p>
+
+      <p>The pattern is the same. The scale is different. Instead of making property information accessible to home buyers, we’re making organizational knowledge accessible to every employee through AI. Instead of 200 cities, we’re deploying across Banking, Manufacturing, Real Estate, and EdTech. The information asymmetry is different, but the fundamental mission is identical: use technology to give people access to the information they need to make better decisions.</p>
+
+      <p>Some founders start from scratch every time. I start from lessons. CommonFloor’s lessons &mdash; about trust, timing, localization, and the power of solving information asymmetry &mdash; are embedded in everything we build at Garvik AI. They’re the invisible architecture underneath ReBillion.ai.</p>
+
+      <p>India’s real estate was broken. We fixed it with technology. Enterprise knowledge is broken. We’re fixing that too.</p>
+
+    </div>
+
+    <!-- Author / CTA -->
+    <div class="mt-16 rounded-xl border border-border bg-warm p-8 md:p-10">
+      <div class="flex flex-col md:flex-row md:items-center gap-6">
+        <div class="flex-1">
+          <h3 class="font-serif text-xl font-bold text-bark">Vikas Malpani</h3>
+          <p class="mt-2 text-sm text-muted">Co-Founder of maxHeap (CommonFloor.com, $200M exit). Now building ReBillion.ai at Garvik AI. MIT TR35 Young Innovator.</p>
+        </div>
+        <div class="flex gap-3">
+          <a href="https://x.com/vikasmalpani" target="_blank" rel="noopener noreferrer" class="rounded-lg border border-border px-4 py-2 text-sm font-medium text-muted hover:text-bark hover:border-bark transition">Follow on X</a>
+          <a href="https://linkedin.com/in/vikasmalpani" target="_blank" rel="noopener noreferrer" class="rounded-lg bg-bark px-4 py-2 text-sm font-medium text-cream hover:bg-walnut transition">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- More Essays -->
+    <div class="mt-12 border-t border-border pt-10">
+      <h3 class="font-serif text-xl font-bold text-bark mb-6">More Essays</h3>
+      <div class="space-y-4">
+        <a href="why-i-left-200m-exit.html" class="block rounded-lg border border-border p-5 hover:border-accent/30 hover:bg-warm/50 transition">
+          <span class="text-xs font-semibold text-accent">Building</span>
+          <h4 class="mt-1 font-serif text-lg font-semibold text-bark">Why I Left a $200M Exit to Start Again at Zero</h4>
+        </a>
+        <a href="what-i-look-for-in-founders.html" class="block rounded-lg border border-border p-5 hover:border-accent/30 hover:bg-warm/50 transition">
+          <span class="text-xs font-semibold text-amber">Investing</span>
+          <h4 class="mt-1 font-serif text-lg font-semibold text-bark">What I Look For in Founders (It’s Not What VCs Say)</h4>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</article>
+
+<!-- FOOTER -->
+<footer class="border-t border-border py-8 bg-cream">
+  <div class="mx-auto flex max-w-5xl flex-col md:flex-row items-center justify-between gap-4 px-6">
+    <span class="text-sm text-muted">&copy; 2026 Vikas Malpani</span>
+    <div class="flex gap-6 text-sm text-muted">
+      <a href="https://rebillion.ai" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 hover:text-bark transition">ReBillion.ai</a>
+      <a href="https://linkedin.com/in/vikasmalpani" target="_blank" rel="noopener noreferrer" class="hover:text-bark transition">LinkedIn</a>
+      <a href="https://x.com/vikasmalpani" target="_blank" rel="noopener noreferrer" class="hover:text-bark transition">X</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
