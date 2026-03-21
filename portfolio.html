@@ -67,6 +67,16 @@
     </div>
     <a href="index.html#connect" class="rounded-lg bg-bark px-4 py-2 text-sm font-medium text-cream hover:bg-walnut transition">Let’s Talk</a>
   </div>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden border-t border-border bg-cream">
+    <div class="flex flex-col px-6 py-4 gap-4 text-sm font-medium text-muted">
+      <a href="index.html#essays" class="mobile-link hover:text-bark transition py-1">Essays</a>
+      <a href="index.html#track-record" class="mobile-link hover:text-bark transition py-1">Work</a>
+      <a href="#portfolio" class="mobile-link hover:text-bark transition py-1">Investing</a>
+      <a href="index.html#connect" class="mobile-link hover:text-bark transition py-1">Connect</a>
+      <a href="index.html#connect" class="mobile-link mt-2 rounded-lg bg-bark px-4 py-2.5 text-sm font-medium text-cream text-center hover:bg-walnut transition">Let's Talk</a>
+    </div>
+  </div>
 </nav>
 
 <!-- HERO -->
@@ -408,7 +418,29 @@
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   });
-</script>
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenuEl = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenuEl) {
+      menuBtn.addEventListener('click', () => {
+        mobileMenuEl.classList.toggle('hidden');
+        const isOpen = !mobileMenuEl.classList.contains('hidden');
+        menuBtn.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+        menuBtn.innerHTML = isOpen
+          ? '<svg class="h-5 w-5 text-bark" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>'
+          : '<svg class="h-5 w-5 text-bark" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>';
+      });
+      mobileMenuEl.querySelectorAll('.mobile-link').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenuEl.classList.add('hidden');
+          menuBtn.setAttribute('aria-label', 'Open menu');
+          menuBtn.innerHTML = '<svg class="h-5 w-5 text-bark" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>';
+        });
+      });
+    }
+  </script>
 
 </body>
 </html>
+
